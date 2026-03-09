@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Chromanga | HD</title>
+    <style>
+        :root { --bg: #0a0a0c; --accent: #ff4757; --text: #ffffff; }
+        body { background: var(--bg); color: var(--text); font-family: sans-serif; margin: 0; }
+        
+        header { padding: 30px; text-align: center; border-bottom: 2px solid var(--accent); }
+        .container { padding: 20px; max-width: 800px; margin: 0 auto; }
+        
+        .card { background: #16161a; border-radius: 15px; overflow: hidden; border: 1px solid #333; cursor: pointer; text-align: center; }
+        .card img { width: 100%; height: auto; display: block; }
+
+        /* OKUYUCU KATMANI */
+        #reader { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; z-index: 1000; overflow-y: auto; }
+        .nav { position: sticky; top: 0; background: rgba(0,0,0,0.9); padding: 15px; display: flex; justify-content: space-between; align-items: center; }
+        
+        /* RESİM NETLEŞTİRME AYARI */
+        .view { display: flex; flex-direction: column; align-items: center; width: 100%; }
+        .view img { 
+            width: 100%; 
+            max-width: 800px; /* Çok büyüyüp dağılmasın diye */
+            height: auto; 
+            margin-bottom: 2px;
+            image-rendering: -webkit-optimize-contrast; /* Kenarları keskinleştirir */
+            image-rendering: crisp-edges;
+        }
+
+        .btn { background: var(--accent); color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="container" id="home">
+    <header><h1>CHRO<span>MANGA</span></h1></header>
+    <br>
+    <div class="card" onclick="openReader()">
+        <img src="https://i.ibb.co/MkW5pHKG/Screenshot-2026-03-09-19-57-38-392-com-miui-gallery.jpg" alt="Kapak">
+        <div style="padding:15px;"><b>Belalı - 1. Bölüm</b></div>
+    </div>
+</div>
+
+<div id="reader">
+    <div class="nav">
+        <span>Belalı - Bölüm 1</span>
+        <button class="btn" onclick="closeReader()">Kapat ×</button>
+    </div>
+    <div class="view" id="images-box"></div>
+</div>
+
+<script>
+    // Gönderdiğin yeni linkleri sırayla ekledim
+    const yeniLinkler = [
+        "https://i.ibb.co/MkW5pHKG/Screenshot-2026-03-09-19-57-38-392-com-miui-gallery.jpg",
+        "https://i.ibb.co/vxJwY8Wz/Screenshot-2026-03-09-19-57-41-883-com-miui-gallery.jpg",
+        "https://i.ibb.co/G37CYMVH/Screenshot-2026-03-09-19-57-46-627-com-miui-gallery.jpg",
+        "https://i.ibb.co/RT7jRbxm/Screenshot-2026-03-09-19-57-50-074-com-miui-gallery.jpg",
+        "https://i.ibb.co/ZzZLjMJb/Screenshot-2026-03-09-19-57-52-958-com-miui-gallery.jpg",
+        "https://i.ibb.co/v4ZCp47r/Screenshot-2026-03-09-19-57-56-217-com-miui-gallery.jpg",
+        "https://i.ibb.co/qLd4FWLq/Screenshot-2026-03-09-19-57-59-360-com-miui-gallery.jpg",
+        "https://i.ibb.co/zVdHrYZf/Screenshot-2026-03-09-19-58-02-648-com-miui-gallery.jpg",
+        "https://i.ibb.co/3m4b4P6d/Screenshot-2026-03-09-19-58-05-965-com-miui-gallery.jpg"
+    ];
+
+    function openReader() {
+        const container = document.getElementById('images-box');
+        container.innerHTML = '';
+        yeniLinkler.forEach(url => {
+            container.innerHTML += `<img src="${url}">`;
+        });
+        document.getElementById('reader').style.display = 'block';
+    }
+
+    function closeReader() {
+        document.getElementById('reader').style.display = 'none';
+    }
+</script>
+</body>
+</html>
