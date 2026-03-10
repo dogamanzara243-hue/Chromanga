@@ -15,22 +15,33 @@
         .logo { font-size: 28px; font-weight: bold; letter-spacing: 2px; }
         .logo span { color: var(--accent); }
 
-        .container { padding: 20px; max-width: 1000px; margin: 0 auto; display: flex; justify-content: center; }
+        .container { 
+            padding: 10px; 
+            max-width: 1000px; 
+            margin: 0 auto; 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: space-between; /* Kartları iki yana yaslar */
+            gap: 10px; /* Kartlar arasındaki boşluk */
+        }
         
-        /* MANGA KARTI */
         .manga-card { 
             background: var(--card); 
-            border-radius: 15px; 
+            border-radius: 10px; 
             overflow: hidden; 
             border: 1px solid #333; 
             cursor: pointer; 
-            width: 300px; 
+            /* BURASI ÖNEMLİ: Ekranın %50'sinden biraz az (boşluklar için) */
+            width: calc(50% - 10px); 
             transition: 0.3s;
         }
-        .manga-card:hover { transform: translateY(-5px); border-color: var(--accent); }
-        .manga-card img { width: 100%; height: auto; display: block; }
-        .manga-info { padding: 15px; text-align: center; font-weight: bold; }
 
+        .manga-card img { 
+            width: 100%; 
+            height: 250px; /* Mobilde çok kaba durmaması için boyu kısalttık */
+            object-fit: cover; 
+            display: block; 
+        }
         /* OKUYUCU EKRANI */
         #reader { 
             display: none; 
