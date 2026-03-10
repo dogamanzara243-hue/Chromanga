@@ -1,431 +1,435 @@
+
 {
-  "title": "dungeons-artifacts",
+  "title": "Dungeons & Artifacts",
+  "cover": "https://mangazure.net/wp-content/uploads/2021/05/dungeons-artifacts-193x278.jpg",
+  "desc": "Efsanevi eserlerin ve tehlikeli zindanların hikayesi. Chromanga sunar!",
   "chapters": [
+    49,
     {
       "name": "Bölüm 01",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-01/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-01/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-01/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-01/4.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-01/5.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-01/6.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-01/7.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-01/8.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 02",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-02/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-02/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-02/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-02/4.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-02/5.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-02/6.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 03",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-03/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-03/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-03/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-03/4.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-03/5.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-03/6.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 04",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-04/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-04/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-04/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-04/4.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-04/5.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-04/6.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 05",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-05/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-05/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-05/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-05/4.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-05/5.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-05/6.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 06",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-06/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-06/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-06/3.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-06/4.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 07",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-07/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-07/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-07/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-07/4.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-07/5.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 08",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-08/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-08/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-08/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-08/4.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-08/5.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-08/6.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 09",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-09/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-09/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-09/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-09/4.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-09/5.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 10",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-10/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-10/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-10/3.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-10/4.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 11",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-11/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-11/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-11/3.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-11/4.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 12",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-12/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-12/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-12/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-12/4.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-12/5.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 13",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-13/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-13/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-13/3.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-13/4.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 14",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-14/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-14/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-14/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-14/4.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-14/5.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 15",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-15/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-15/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-15/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-15/4.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-15/5.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 16",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-16/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-16/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-16/3.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-16/4.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 17",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-17/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-17/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-17/3.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-17/4.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 18",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-18/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-18/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-18/3.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-18/4.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 19",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-19/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-19/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-19/3.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-19/4.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 20",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-20/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-20/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-20/3.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-20/4.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 21",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-21/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-21/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-21/3.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-21/4.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 22",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-22/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-22/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-22/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-22/4.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-22/5.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 23",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-23/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-23/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-23/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-23/4.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-23/5.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 24",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-24/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-24/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-24/3.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-24/4.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 25",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-25/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-25/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-25/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-25/4.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-25/5.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 26",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-26/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-26/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-26/3.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-26/4.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 27",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-27/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-27/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-27/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-27/4.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-27/5.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 28",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-28/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-28/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-28/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-28/4.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-28/5.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 29",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-29/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-29/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-29/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-29/4.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-29/5.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 30",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-30/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-30/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-30/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-30/4.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-30/5.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 31",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-31/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-31/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-31/3.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-31/4.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 32",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-32/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-32/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-32/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-32/4.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-32/5.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 33",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-33/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-33/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-33/3.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-33/4.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 34",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-34/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-34/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-34/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-34/4.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-34/5.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 35",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-35/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-35/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-35/3.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-35/4.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 36",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-36/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-36/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-36/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-36/4.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-36/5.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 37",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-37/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-37/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-37/3.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-37/4.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 38",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-38/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-38/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-38/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-38/4.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-38/5.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 39",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-39/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-39/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-39/3.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-39/4.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 40",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-40/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-40/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-40/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-40/4.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-40/5.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-40/6.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-40/7.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 41",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-41/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-41/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-41/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-41/4.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-41/5.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 42",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-42/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-42/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-42/3.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-42/4.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 43",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-43/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-43/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-43/3.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-43/4.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 44",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-44/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-44/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-44/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-44/4.jpg",
@@ -436,22 +440,22 @@
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-44/9.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-44/10.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-44/11.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-44/12.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 45",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-45/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-45/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-45/3.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-45/4.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 46",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-46/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-46/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-46/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-46/4.jpg",
@@ -486,13 +490,13 @@
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-46/33.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-46/34.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-46/35.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-46/36.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 47",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-47/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-47/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-47/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-47/4.jpg",
@@ -527,13 +531,13 @@
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-47/33.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-47/34.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-47/35.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-47/36.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 48",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-48/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-48/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-48/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-48/4.jpg",
@@ -563,13 +567,13 @@
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-48/28.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-48/29.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-48/30.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-48/31.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     },
     {
       "name": "Bölüm 49",
       "images": [
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-49/1.jpg",
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-49/2.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-49/3.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-49/4.jpg",
@@ -598,7 +602,7 @@
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-49/27.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-49/28.jpg",
         "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-49/29.jpg",
-        "https://cdni.xyz/zure/eski/c01/uploads/WP-manga/data/manga_6731a85923f34/bolum-49/30.jpg"
+        "https://dogamanzara243-hue.github.io/Chromanga/unnamed.jpg"
       ]
     }
   ]
