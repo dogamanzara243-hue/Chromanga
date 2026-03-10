@@ -40,9 +40,35 @@
             letter-spacing: 2px;
         }
 
+        /* Arama Çubuğu Tasarımı */
+        .search-container {
+            max-width: 600px;
+            margin: -25px auto 30px;
+            padding: 0 15px;
+            position: relative;
+            z-index: 10;
+        }
+
+        #mangaSearch {
+            width: 100%;
+            padding: 15px 25px;
+            border-radius: 30px;
+            border: 2px solid var(--primary);
+            background: var(--card-bg);
+            color: white;
+            font-size: 1rem;
+            outline: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            transition: 0.3s;
+        }
+
+        #mangaSearch:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+        }
+
         .container { max-width: 1000px; margin: 20px auto; padding: 0 15px; }
         
-        /* Manga Grid */
         .manga-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -68,7 +94,7 @@
         .manga-info { padding: 12px; text-align: center; }
         .manga-info h3 { margin: 0; font-size: 1rem; }
 
-        /* Reader */
+        /* Reader ve Diğerleri aynı kalıyor... */
         #reader { display: none; padding-bottom: 50px; }
         
         .manga-header-detail {
@@ -109,7 +135,6 @@
             cursor: pointer;
             font-weight: 600;
             transition: 0.3s;
-            font-size: 0.9rem;
         }
 
         .btn:disabled { opacity: 0.3; cursor: not-allowed; filter: grayscale(1); }
@@ -123,13 +148,11 @@
             text-align: left;
             border-radius: 10px;
             cursor: pointer;
-            font-size: 1rem;
         }
-        .chapter-list button:hover { background: var(--primary); border-color: var(--accent); }
+        .chapter-list button:hover { background: var(--primary); }
 
         .manga-images img { width: 100%; display: block; }
 
-        /* Feedback Box */
         .feedback-box {
             background: var(--card-bg);
             padding: 25px;
@@ -140,11 +163,8 @@
         }
 
         .feedback-btns { display: flex; justify-content: center; gap: 15px; margin-top: 15px; }
-        
-        .like-btn { background: var(--success); color: #000; padding: 12px 25px; border-radius: 12px; border: none; font-weight: bold; cursor: pointer; transition: 0.2s; }
-        .dislike-btn { background: var(--error); color: #fff; padding: 12px 25px; border-radius: 12px; border: none; font-weight: bold; cursor: pointer; transition: 0.2s; }
-        .like-btn:active { transform: scale(0.9); }
-
+        .like-btn { background: var(--success); color: #000; padding: 12px 25px; border-radius: 12px; border: none; font-weight: bold; cursor: pointer; }
+        .dislike-btn { background: var(--error); color: #fff; padding: 12px 25px; border-radius: 12px; border: none; font-weight: bold; cursor: pointer; }
         #thanks-msg { margin-top: 15px; color: var(--success); font-weight: bold; display: none; }
 
         @media (max-width: 600px) {
@@ -159,6 +179,10 @@
         <h1>CHROMANGA</h1>
     </header>
 
+    <div class="search-container" id="search-area">
+        <input type="text" id="mangaSearch" placeholder="Manga ara..." onkeyup="filterMangas()">
+    </div>
+
     <div class="container" id="home-view">
         <div id="manga-list" class="manga-grid">
             <p>Kütüphane taranıyor...</p>
@@ -167,31 +191,23 @@
 
     <div class="container" id="reader">
         <button class="btn" onclick="location.reload()" style="margin-bottom: 20px;">← Ana Sayfa</button>
-        
         <div id="manga-detail-header" class="manga-header-detail"></div>
-
         <div id="chapter-selection" class="chapter-list"></div>
-
         <div id="image-view" style="display: none;">
             <div class="nav-controls">
                 <button class="btn" id="prevBtn" onclick="changeChapter(-1)">←</button>
                 <span id="current-ch-name" style="font-weight: bold; color: var(--accent);"></span>
                 <button class="btn" id="nextBtn" onclick="changeChapter(1)">→</button>
             </div>
-            
             <div id="manga-pages" class="manga-images"></div>
-
             <div class="feedback-box">
                 <h3>Bu bölümü beğendin mi?</h3>
                 <div class="feedback-btns">
-                    <button class="like-btn" id="likeBtn" onclick="handleLike()">
-                        👍 EVET (<span id="like-count">0</span>)
-                    </button>
+                    <button class="like-btn" id="likeBtn" onclick="handleLike()">👍 EVET (<span id="like-count">0</span>)</button>
                     <button class="dislike-btn" onclick="alert('Geri bildirimin için teşekkürler!')">👎 HAYIR</button>
                 </div>
                 <div id="thanks-msg">Harika! Beğenin kaydedildi. ❤️</div>
             </div>
-
             <div class="nav-controls" style="margin-top: 20px; position: static; border-bottom: none; border-top: 1px solid #333;">
                 <button class="btn" id="prevBtnBottom" onclick="changeChapter(-1)">Önceki Bölüm</button>
                 <button class="btn" id="nextBtnBottom" onclick="changeChapter(1)">Sonraki Bölüm</button>
@@ -200,6 +216,7 @@
     </div>
 
     <script>
+        let allMangas = []; // Tüm mangaları burada tutacağız
         let currentManga = null;
         let currentChapterIndex = -1;
 
@@ -214,23 +231,46 @@
                     try {
                         const res = await fetch(file);
                         const data = await res.json();
-                        const card = document.createElement('div');
-                        card.className = 'manga-card';
-                        card.innerHTML = `
-                            <img src="${data.cover}" alt="${data.title}">
-                            <div class="manga-info"><h3>${data.title}</h3></div>
-                        `;
-                        card.onclick = () => showManga(data);
-                        listDiv.appendChild(card);
-                    } catch(e) { console.error("Dosya yüklenemedi:", file); }
+                        allMangas.push(data); // Arama için listeye ekle
+                        renderCard(data);
+                    } catch(e) { console.error("Hata:", file); }
                 }
-            } catch (e) { listDiv.innerHTML = "Mangalar yüklenirken bir hata oluştu."; }
+            } catch (e) { listDiv.innerHTML = "Veri hatası."; }
+        }
+
+        function renderCard(data) {
+            const listDiv = document.getElementById('manga-list');
+            const card = document.createElement('div');
+            card.className = 'manga-card';
+            card.setAttribute('data-title', data.title.toLowerCase()); // Arama için
+            card.innerHTML = `
+                <img src="${data.cover}" alt="${data.title}">
+                <div class="manga-info"><h3>${data.title}</h3></div>
+            `;
+            card.onclick = () => showManga(data);
+            listDiv.appendChild(card);
+        }
+
+        // ARAMA FONKSİYONU
+        function filterMangas() {
+            const searchTerm = document.getElementById('mangaSearch').value.toLowerCase();
+            const cards = document.querySelectorAll('.manga-card');
+            
+            cards.forEach(card => {
+                const title = card.getAttribute('data-title');
+                if (title.includes(searchTerm)) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
         }
 
         function showManga(data) {
             currentManga = data;
             document.getElementById('home-view').style.display = 'none';
             document.getElementById('main-nav').style.display = 'none';
+            document.getElementById('search-area').style.display = 'none'; // Arama çubuğunu gizle
             document.getElementById('reader').style.display = 'block';
             document.getElementById('image-view').style.display = 'none';
             document.getElementById('chapter-selection').style.display = 'grid';
@@ -240,7 +280,7 @@
                 <img src="${data.cover}">
                 <div class="manga-summary">
                     <h2>${data.title}</h2>
-                    <p>${data.desc || "Gizemli bir hikaye seni bekliyor..."}</p>
+                    <p>${data.desc || "Açıklama yok."}</p>
                     <div style="color: var(--accent); font-weight: bold;">${data.chapters.length} Bölüm</div>
                 </div>
             `;
@@ -258,33 +298,23 @@
         function openChapter(index) {
             currentChapterIndex = index;
             const ch = currentManga.chapters[index];
-            
             document.getElementById('chapter-selection').style.display = 'none';
             document.getElementById('image-view').style.display = 'block';
             document.getElementById('current-ch-name').innerText = ch.name;
-
             const pages = document.getElementById('manga-pages');
-            pages.innerHTML = "<p style='text-align:center; padding:20px;'>Sayfalar yükleniyor...</p>";
-            
-            const imgContainer = document.createElement('div');
+            pages.innerHTML = "";
             ch.images.forEach(imgUrl => {
                 const img = document.createElement('img');
                 img.src = imgUrl;
                 img.loading = "lazy";
-                imgContainer.appendChild(img);
+                pages.appendChild(img);
             });
-            pages.innerHTML = "";
-            pages.appendChild(imgContainer);
-
-            // Navigasyon Kontrolü
             const isFirst = index === 0;
             const isLast = index === currentManga.chapters.length - 1;
-            
             document.getElementById('prevBtn').disabled = isFirst;
             document.getElementById('prevBtnBottom').disabled = isFirst;
             document.getElementById('nextBtn').disabled = isLast;
             document.getElementById('nextBtnBottom').disabled = isLast;
-            
             resetLikeCount();
             window.scrollTo(0,0);
         }
@@ -298,21 +328,14 @@
 
         function handleLike() {
             const countSpan = document.getElementById('like-count');
-            const btn = document.getElementById('likeBtn');
-            const msg = document.getElementById('thanks-msg');
-            
             countSpan.innerText = parseInt(countSpan.innerText) + 1;
-            btn.disabled = true;
-            btn.style.opacity = "0.5";
-            msg.style.display = "block";
+            document.getElementById('likeBtn').disabled = true;
+            document.getElementById('thanks-msg').style.display = "block";
         }
 
         function resetLikeCount() {
-            const randomLikes = Math.floor(Math.random() * 451) + 50; // 50-500 arası
-            document.getElementById('like-count').innerText = randomLikes;
-            const btn = document.getElementById('likeBtn');
-            btn.disabled = false;
-            btn.style.opacity = "1";
+            document.getElementById('like-count').innerText = Math.floor(Math.random() * 400) + 50;
+            document.getElementById('likeBtn').disabled = false;
             document.getElementById('thanks-msg').style.display = "none";
         }
 
