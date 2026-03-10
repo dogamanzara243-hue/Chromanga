@@ -1,0 +1,11 @@
+{
+  "title": "The Primal Hunter",
+  "desc": "Dünya aniden devasa bir oyun alanına dönüştüğünde...",
+  "cover": "https://webtoon-phinf.pstatic.net/20240326_37/1711384093967kqHAN_JPEG/17113840939537338_The_Primal_Hunter_Episode_1_0001.jpg",
+  "chapters": [
+    {
+      "name": "Bölüm 1",
+      "images": ["link1.jpg", "link2.jpg"]
+    }
+  ]
+}
