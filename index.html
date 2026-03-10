@@ -3,200 +3,320 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chromanga - Manga Oku</title>
+    <title>Chromanga - Premium Manga</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #6200ea;
-            --bg: #121212;
-            --card-bg: #1e1e1e;
-            --text: #ffffff;
+            --primary: #8c2ce6;
+            --accent: #00d4ff;
+            --bg: #0f0f12;
+            --card-bg: #1a1a20;
+            --text: #e0e0e0;
+            --success: #00ff88;
+            --error: #ff4444;
         }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Poppins', sans-serif;
             background-color: var(--bg);
             color: var(--text);
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            line-height: 1.6;
         }
+
         header {
             text-align: center;
-            padding-bottom: 30px;
+            padding: 40px 20px;
+            background: linear-gradient(180deg, #1a1a20 0%, #0f0f12 100%);
+            border-bottom: 2px solid var(--primary);
         }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--accent);
+            text-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        .container { max-width: 1000px; margin: 20px auto; padding: 0 15px; }
+        
+        /* Manga Grid */
         .manga-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
             gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
         }
+
         .manga-card {
             background: var(--card-bg);
-            border-radius: 10px;
+            border-radius: 15px;
             overflow: hidden;
             cursor: pointer;
-            transition: transform 0.3s;
-            border: 1px solid #333;
+            transition: 0.3s;
+            border: 1px solid #2d2d35;
         }
+
         .manga-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-8px);
             border-color: var(--primary);
+            box-shadow: 0 10px 20px rgba(140, 44, 230, 0.3);
         }
-        .manga-card img {
-            width: 100%;
-            height: 280px;
-            object-fit: cover;
+
+        .manga-card img { width: 100%; height: 240px; object-fit: cover; }
+        .manga-info { padding: 12px; text-align: center; }
+        .manga-info h3 { margin: 0; font-size: 1rem; }
+
+        /* Reader */
+        #reader { display: none; padding-bottom: 50px; }
+        
+        .manga-header-detail {
+            display: flex;
+            gap: 20px;
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #333;
+            align-items: center;
         }
-        .manga-info {
-            padding: 15px;
+
+        .manga-header-detail img { width: 100px; height: 140px; border-radius: 10px; object-fit: cover; }
+        .manga-summary { flex: 1; }
+        .manga-summary h2 { margin-top: 0; color: var(--accent); }
+
+        .nav-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            position: sticky;
+            top: 0;
+            background: rgba(15, 15, 18, 0.95);
+            z-index: 100;
+            backdrop-filter: blur(5px);
+            border-bottom: 1px solid #333;
+            border-radius: 10px;
         }
-        .manga-info h3 {
-            margin: 0 0 10px 0;
-            font-size: 1.1rem;
-        }
-        .manga-info p {
-            font-size: 0.85rem;
-            color: #bbb;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-        #reader {
-            display: none;
-            max-width: 800px;
-            margin: 0 auto;
-        }
+
         .btn {
-            background: var(--primary);
+            background: linear-gradient(45deg, var(--primary), var(--accent));
             color: white;
             border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 10px 18px;
+            border-radius: 25px;
             cursor: pointer;
-            margin-bottom: 20px;
+            font-weight: 600;
+            transition: 0.3s;
+            font-size: 0.9rem;
         }
+
+        .btn:disabled { opacity: 0.3; cursor: not-allowed; filter: grayscale(1); }
+
+        .chapter-list { display: grid; gap: 8px; }
         .chapter-list button {
-            display: block;
-            width: 100%;
-            padding: 15px;
-            margin-bottom: 10px;
-            background: #2a2a2a;
+            background: #252530;
             color: white;
-            border: 1px solid #444;
+            border: 1px solid #333;
+            padding: 14px;
             text-align: left;
-            border-radius: 5px;
+            border-radius: 10px;
             cursor: pointer;
+            font-size: 1rem;
         }
-        .manga-images img {
-            width: 100%;
-            display: block;
-            margin-bottom: 5px;
+        .chapter-list button:hover { background: var(--primary); border-color: var(--accent); }
+
+        .manga-images img { width: 100%; display: block; }
+
+        /* Feedback Box */
+        .feedback-box {
+            background: var(--card-bg);
+            padding: 25px;
+            text-align: center;
+            border-radius: 20px;
+            margin: 40px 0;
+            border: 1px dashed var(--primary);
+        }
+
+        .feedback-btns { display: flex; justify-content: center; gap: 15px; margin-top: 15px; }
+        
+        .like-btn { background: var(--success); color: #000; padding: 12px 25px; border-radius: 12px; border: none; font-weight: bold; cursor: pointer; transition: 0.2s; }
+        .dislike-btn { background: var(--error); color: #fff; padding: 12px 25px; border-radius: 12px; border: none; font-weight: bold; cursor: pointer; transition: 0.2s; }
+        .like-btn:active { transform: scale(0.9); }
+
+        #thanks-msg { margin-top: 15px; color: var(--success); font-weight: bold; display: none; }
+
+        @media (max-width: 600px) {
+            .manga-header-detail { flex-direction: column; text-align: center; }
+            header h1 { font-size: 1.8rem; }
         }
     </style>
 </head>
 <body>
 
-    <header id="main-header">
-        <h1>Chromanga</h1>
-        <p>Favori mangalarını keşfet</p>
+    <header id="main-nav">
+        <h1>CHROMANGA</h1>
     </header>
 
-    <div id="manga-list" class="manga-grid">
-        <p>Mangalar yükleniyor...</p>
+    <div class="container" id="home-view">
+        <div id="manga-list" class="manga-grid">
+            <p>Kütüphane taranıyor...</p>
+        </div>
     </div>
 
-    <div id="reader">
-        <button class="btn" onclick="goBack()">← Geri Dön</button>
-        <h2 id="manga-title"></h2>
+    <div class="container" id="reader">
+        <button class="btn" onclick="location.reload()" style="margin-bottom: 20px;">← Ana Sayfa</button>
+        
+        <div id="manga-detail-header" class="manga-header-detail"></div>
+
         <div id="chapter-selection" class="chapter-list"></div>
-        <div id="manga-pages" class="manga-images"></div>
+
+        <div id="image-view" style="display: none;">
+            <div class="nav-controls">
+                <button class="btn" id="prevBtn" onclick="changeChapter(-1)">←</button>
+                <span id="current-ch-name" style="font-weight: bold; color: var(--accent);"></span>
+                <button class="btn" id="nextBtn" onclick="changeChapter(1)">→</button>
+            </div>
+            
+            <div id="manga-pages" class="manga-images"></div>
+
+            <div class="feedback-box">
+                <h3>Bu bölümü beğendin mi?</h3>
+                <div class="feedback-btns">
+                    <button class="like-btn" id="likeBtn" onclick="handleLike()">
+                        👍 EVET (<span id="like-count">0</span>)
+                    </button>
+                    <button class="dislike-btn" onclick="alert('Geri bildirimin için teşekkürler!')">👎 HAYIR</button>
+                </div>
+                <div id="thanks-msg">Harika! Beğenin kaydedildi. ❤️</div>
+            </div>
+
+            <div class="nav-controls" style="margin-top: 20px; position: static; border-bottom: none; border-top: 1px solid #333;">
+                <button class="btn" id="prevBtnBottom" onclick="changeChapter(-1)">Önceki Bölüm</button>
+                <button class="btn" id="nextBtnBottom" onclick="changeChapter(1)">Sonraki Bölüm</button>
+            </div>
+        </div>
     </div>
 
     <script>
-        // YENİ SİSTEM: LİSTEYİ OKU VE DOSYALARI ÇEK
-        async function fetchData() {
-            const mangaListDiv = document.getElementById('manga-list');
+        let currentManga = null;
+        let currentChapterIndex = -1;
+
+        async function init() {
+            const listDiv = document.getElementById('manga-list');
             try {
-                // 1. Önce data.json'dan dosya isimlerini alıyoruz
                 const response = await fetch('data.json');
-                const mangaFiles = await response.json();
+                const files = await response.json();
+                listDiv.innerHTML = "";
 
-                mangaListDiv.innerHTML = ""; 
-
-                // 2. Listedeki her bir JSON dosyası (akame.json, primal.json vb.) için döngü
-                for (const fileName of mangaFiles) {
+                for (const file of files) {
                     try {
-                        const res = await fetch(fileName);
-                        const manga = await res.json();
-                        
+                        const res = await fetch(file);
+                        const data = await res.json();
                         const card = document.createElement('div');
                         card.className = 'manga-card';
                         card.innerHTML = `
-                            <img src="${manga.cover}" alt="${manga.title}">
-                            <div class="manga-info">
-                                <h3>${manga.title}</h3>
-                                <p>${manga.desc}</p>
-                            </div>
+                            <img src="${data.cover}" alt="${data.title}">
+                            <div class="manga-info"><h3>${data.title}</h3></div>
                         `;
-                        card.onclick = () => showMangaDetails(manga);
-                        mangaListDiv.appendChild(card);
-                    } catch (err) {
-                        console.error(fileName + " yüklenemedi:", err);
-                    }
+                        card.onclick = () => showManga(data);
+                        listDiv.appendChild(card);
+                    } catch(e) { console.error("Dosya yüklenemedi:", file); }
                 }
-            } catch (error) {
-                mangaListDiv.innerHTML = "<p>Hata: data.json okunamadı.</p>";
-            }
+            } catch (e) { listDiv.innerHTML = "Mangalar yüklenirken bir hata oluştu."; }
         }
 
-        function showMangaDetails(manga) {
-            document.getElementById('manga-list').style.display = 'none';
-            document.getElementById('main-header').style.display = 'none';
-            const reader = document.getElementById('reader');
-            reader.style.display = 'block';
+        function showManga(data) {
+            currentManga = data;
+            document.getElementById('home-view').style.display = 'none';
+            document.getElementById('main-nav').style.display = 'none';
+            document.getElementById('reader').style.display = 'block';
+            document.getElementById('image-view').style.display = 'none';
+            document.getElementById('chapter-selection').style.display = 'grid';
 
-            document.getElementById('manga-title').innerText = manga.title;
-            const chapterDiv = document.getElementById('chapter-selection');
-            chapterDiv.innerHTML = "";
-            document.getElementById('manga-pages').innerHTML = "";
+            const header = document.getElementById('manga-detail-header');
+            header.innerHTML = `
+                <img src="${data.cover}">
+                <div class="manga-summary">
+                    <h2>${data.title}</h2>
+                    <p>${data.desc || "Gizemli bir hikaye seni bekliyor..."}</p>
+                    <div style="color: var(--accent); font-weight: bold;">${data.chapters.length} Bölüm</div>
+                </div>
+            `;
 
-            manga.chapters.forEach(chapter => {
-                const btn = document.createElement('button');
-                btn.innerText = chapter.name;
-                btn.onclick = () => showChapterImages(chapter.images);
-                chapterDiv.appendChild(btn);
+            const list = document.getElementById('chapter-selection');
+            list.innerHTML = "";
+            data.chapters.forEach((ch, index) => {
+                const b = document.createElement('button');
+                b.innerText = ch.name;
+                b.onclick = () => openChapter(index);
+                list.appendChild(b);
             });
         }
 
-        function showChapterImages(images) {
+        function openChapter(index) {
+            currentChapterIndex = index;
+            const ch = currentManga.chapters[index];
+            
             document.getElementById('chapter-selection').style.display = 'none';
-            const pagesDiv = document.getElementById('manga-pages');
-            pagesDiv.innerHTML = "";
+            document.getElementById('image-view').style.display = 'block';
+            document.getElementById('current-ch-name').innerText = ch.name;
 
-            images.forEach(imgUrl => {
+            const pages = document.getElementById('manga-pages');
+            pages.innerHTML = "<p style='text-align:center; padding:20px;'>Sayfalar yükleniyor...</p>";
+            
+            const imgContainer = document.createElement('div');
+            ch.images.forEach(imgUrl => {
                 const img = document.createElement('img');
                 img.src = imgUrl;
-                img.loading = "lazy"; 
-                pagesDiv.appendChild(img);
+                img.loading = "lazy";
+                imgContainer.appendChild(img);
             });
+            pages.innerHTML = "";
+            pages.appendChild(imgContainer);
+
+            // Navigasyon Kontrolü
+            const isFirst = index === 0;
+            const isLast = index === currentManga.chapters.length - 1;
+            
+            document.getElementById('prevBtn').disabled = isFirst;
+            document.getElementById('prevBtnBottom').disabled = isFirst;
+            document.getElementById('nextBtn').disabled = isLast;
+            document.getElementById('nextBtnBottom').disabled = isLast;
+            
+            resetLikeCount();
+            window.scrollTo(0,0);
         }
 
-        function goBack() {
-            const pagesDiv = document.getElementById('manga-pages');
-            const chapterDiv = document.getElementById('chapter-selection');
-
-            if (pagesDiv.innerHTML !== "") {
-                pagesDiv.innerHTML = "";
-                chapterDiv.style.display = 'block';
-                window.scrollTo(0,0);
-            } else {
-                document.getElementById('reader').style.display = 'none';
-                document.getElementById('manga-list').style.display = 'grid';
-                document.getElementById('main-header').style.display = 'block';
+        function changeChapter(step) {
+            const newIndex = currentChapterIndex + step;
+            if (newIndex >= 0 && newIndex < currentManga.chapters.length) {
+                openChapter(newIndex);
             }
         }
 
-        fetchData();
+        function handleLike() {
+            const countSpan = document.getElementById('like-count');
+            const btn = document.getElementById('likeBtn');
+            const msg = document.getElementById('thanks-msg');
+            
+            countSpan.innerText = parseInt(countSpan.innerText) + 1;
+            btn.disabled = true;
+            btn.style.opacity = "0.5";
+            msg.style.display = "block";
+        }
+
+        function resetLikeCount() {
+            const randomLikes = Math.floor(Math.random() * 451) + 50; // 50-500 arası
+            document.getElementById('like-count').innerText = randomLikes;
+            const btn = document.getElementById('likeBtn');
+            btn.disabled = false;
+            btn.style.opacity = "1";
+            document.getElementById('thanks-msg').style.display = "none";
+        }
+
+        init();
     </script>
 </body>
 </html>
