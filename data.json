@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Belalı",
+    "desc": "Sokakların kurallarını yeniden yazan bir gencin aksiyon dolu hikayesi.",
+    "cover": "https://i.ibb.co/MkW5pHKG/Screenshot-2026-03-09-19-57-38-392-com-miui-gallery.jpg",
+    "chapters": [
+      {
+        "name": "Bölüm 1",
+        "images": [
+          "https://i.ibb.co/MkW5pHKG/Screenshot-2026-03-09-19-57-38-392-com-miui-gallery.jpg",
+          "https://i.ibb.co/vxJwY8Wz/Screenshot-2026-03-09-19-57-41-883-com-miui-gallery.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Eski Stalker'a Karşı",
+    "desc": "Geçmişin gölgeleri peşini bırakmıyor.",
+    "cover": "https://i.ibb.co/pvq1zWP2/Eski-Stalker-a-Kar-3-page-0001.jpg",
+    "chapters": [
+      {
+        "name": "Bölüm 1",
+        "images": [
+          "https://i.ibb.co/pvq1zWP2/Eski-Stalker-a-Kar-3-page-0001.jpg",
+          "https://i.ibb.co/VYYpcTSS/Eski-Stalker-a-Kar-3-page-0002.jpg"
+        ]
+      }
+    ]
+  }
+]
