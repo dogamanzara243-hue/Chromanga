@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>Chromanga | Yönetici Paneli Dostu</title>
+    <title>Chromanga | JSON Altyapısı</title>
     <style>
         :root { --accent: #ff4757; --bg: #0a0a0c; --card: #16161a; }
         body { background: var(--bg); color: white; font-family: 'Segoe UI', sans-serif; margin: 0; }
@@ -12,7 +12,6 @@
         .logo span { color: var(--accent); }
         .container { padding: 10px; display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 10px; max-width: 800px; margin: 0 auto; }
         .manga-card { background: var(--card); border-radius: 10px; overflow: hidden; width: calc(50% - 10px); cursor: pointer; border: 1px solid #222; transition: 0.3s; }
-        .manga-card:active { transform: scale(0.95); }
         .manga-card img { width: 100%; height: 220px; object-fit: cover; }
         .manga-info { padding: 10px; text-align: center; font-size: 13px; font-weight: bold; }
         #detail-view { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--bg); z-index: 2000; overflow-y: auto; padding: 20px; box-sizing: border-box; }
@@ -20,18 +19,19 @@
         .detail-content img { width: 180px; border-radius: 10px; margin-bottom: 15px; }
         .chapter-list { margin-top: 25px; text-align: left; background: #111; border-radius: 10px; padding: 10px; border: 1px solid #222; }
         .chapter-item { display: flex; justify-content: space-between; align-items: center; padding: 15px; border-bottom: 1px solid #222; cursor: pointer; }
-        .chapter-item:active { background: #333; }
         #reader { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; z-index: 3000; overflow-y: auto; }
         .nav-bar { position: sticky; top: 0; background: rgba(0,0,0,0.95); padding: 10px; display: flex; justify-content: space-between; align-items: center; }
         .view-area img { width: 100%; max-width: 800px; display: block; margin: 0 auto; }
         .btn { background: var(--accent); color: white; border: none; padding: 10px 15px; border-radius: 8px; cursor: pointer; font-weight: bold; }
         .btn-close { background: #333; margin: 20px 0; width: 100%; }
+        #loading { text-align: center; padding: 50px; font-size: 18px; color: var(--accent); }
     </style>
 </head>
 <body>
 
 <div id="home">
     <header><div class="logo">CHRO<span>MANGA</span></div></header>
+    <div id="loading">Mangalar Yükleniyor...</div>
     <div class="container" id="manga-list"></div>
 </div>
 
@@ -55,99 +55,59 @@
 </div>
 
 <script>
-    /* ===========================================================
-       YENİ MANGA VEYA BÖLÜM EKLEME ALANI (mangaData)
-       ===========================================================
-       Buraya istediğin kadar manga ekleyebilirsin. 
-       Her yeni manga için bir { ... } bloğu oluşturmalısın.
-    */
+    let mangaData = [];
 
-    const mangaData = [
-        {
-            title: "Belalı", // Manganın adı
-            desc: "Sokakların kurallarını yeniden yazan bir gencin aksiyon dolu hikayesi.", // Manganın özeti
-            cover: "https://i.ibb.co/MkW5pHKG/Screenshot-2026-03-09-19-57-38-392-com-miui-gallery.jpg", // Ana sayfadaki kapak resmi
-            chapters: [
-                {
-                    name: "Bölüm 1: Başlangıç", // Bölümün adı
-                    images: [ // Bölümün resim linkleri (Virgülle ayırarak ekle)
-                        "https://i.ibb.co/MkW5pHKG/Screenshot-2026-03-09-19-57-38-392-com-miui-gallery.jpg",
-                        "https://i.ibb.co/vxJwY8Wz/Screenshot-2026-03-09-19-57-41-883-com-miui-gallery.jpg"
-                    ]
-                }, // <-- BÖLÜMLER ARASINA VİRGÜL KOYMAYI UNUTMA
-                {
-                    name: "Bölüm 2: Hesaplaşma", 
-                    images: [
-                        "https://i.ibb.co/G37CYMVH/Screenshot-2026-03-09-19-57-46-627-com-miui-gallery.jpg"
-                    ]
-                }
-            ]
-        }, // <-- MANGALAR ARASINA VİRGÜL KOYMAYI UNUTMA
-        {
-            title: "Eski Stalker'a Karşı",
-            desc: "Geçmişin gölgeleri peşini bırakmıyor.",
-            cover: "https://i.ibb.co/pvq1zWP2/Eski-Stalker-a-Kar-3-page-0001.jpg",
-            chapters: [
-                {
-                    name: "Bölüm 1: Gizemli Takip",
-                    images: [
-                        "https://i.ibb.co/pvq1zWP2/Eski-Stalker-a-Kar-3-page-0001.jpg",
-                        "https://i.ibb.co/VYYpcTSS/Eski-Stalker-a-Kar-3-page-0002.jpg"
-                    ]
-                }
-            ]
-        } 
-        /* YENİ MANGA EKLEMEK İÇİN: 
-           Yukarıdaki süslü parantezin bitimine bir virgül (,) koy 
-           ve alt satıra yeni bir { ... } bloğu yapıştır.
-        */
-    ];
-
-    /* AŞAĞIDAKİ KODLAR SİSTEMİN ÇALIŞMASINI SAĞLAR. 
-       DOKUNMANA GEREK YOKTUR :) 
-    */
-
-    function initHome() {
-        const list = document.getElementById('manga-list');
-        list.innerHTML = '';
-        mangaData.forEach((manga, index) => {
-            list.innerHTML += `
-                <div class="manga-card" onclick="openDetail(${index})">
-                    <img src="${manga.cover}">
-                    <div class="manga-info">${manga.title}</div>
-                </div>`;
-        });
+    // JSON Verisini Çekme
+    async function fetchManga() {
+        try {
+            // "data.json" dosyasını klasörden çağırıyoruz
+            const response = await fetch('data.json');
+            mangaData = await response.json();
+            document.getElementById('loading').style.display = 'none';
+            renderHome();
+        } catch (err) {
+            document.getElementById('loading').innerText = "Hata: Veriler yüklenemedi!";
+            console.error(err);
+        }
     }
 
-    function openDetail(mangaIndex) {
-        const manga = mangaData[mangaIndex];
+    function renderHome() {
+        const list = document.getElementById('manga-list');
+        list.innerHTML = mangaData.map((manga, index) => `
+            <div class="manga-card" onclick="openDetail(${index})">
+                <img src="${manga.cover}">
+                <div class="manga-info">${manga.title}</div>
+            </div>
+        `).join('');
+    }
+
+    function openDetail(mIndex) {
+        const manga = mangaData[mIndex];
         document.getElementById('detail-img').src = manga.cover;
         document.getElementById('detail-title').innerText = manga.title;
         document.getElementById('detail-desc').innerText = manga.desc;
         const listContainer = document.getElementById('chapter-list-container');
-        listContainer.innerHTML = '<h3 style="margin-bottom:10px; font-size:16px;">Bölümler</h3>';
-        manga.chapters.forEach((ch, chIndex) => {
-            listContainer.innerHTML += `
-                <div class="chapter-item" onclick="startReading(${mangaIndex}, ${chIndex})">
-                    <span>${ch.name}</span>
-                    <span style="color:var(--accent); font-weight:bold;">OKU</span>
-                </div>`;
-        });
+        listContainer.innerHTML = manga.chapters.map((ch, chIndex) => `
+            <div class="chapter-item" onclick="startReading(${mIndex}, ${chIndex})">
+                <span>${ch.name}</span>
+                <span style="color:var(--accent); font-weight:bold;">OKU</span>
+            </div>
+        `).join('');
         document.getElementById('detail-view').style.display = 'block';
     }
 
     function startReading(mIndex, cIndex) {
-        const chapter = mangaData[mIndex].chapters[cIndex];
-        const box = document.getElementById('manga-images');
-        box.innerHTML = chapter.images.map(url => `<img src="${url}" loading="lazy">`).join('');
-        document.getElementById('current-chapter-title').innerText = mangaData[mIndex].title + " - " + chapter.name;
+        const ch = mangaData[mIndex].chapters[cIndex];
+        document.getElementById('manga-images').innerHTML = ch.images.map(img => `<img src="${img}" loading="lazy">`).join('');
+        document.getElementById('current-chapter-title').innerText = mangaData[mIndex].title + " - " + ch.name;
         document.getElementById('reader').style.display = 'block';
         document.getElementById('reader').scrollTo(0,0);
     }
 
     function closeDetail() { document.getElementById('detail-view').style.display = 'none'; }
     function closeReader() { document.getElementById('reader').style.display = 'none'; }
-    initHome();
+
+    window.onload = fetchManga;
 </script>
 </body>
 </html>
