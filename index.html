@@ -36,41 +36,34 @@
     <script>
         let mangaData = [];
 
-        async function loadManga() {
-            try {
-                const res = await fetch('data.json');
-                mangaData = await res.json();
-                const list = document.getElementById('manga-list');
-                list.innerHTML = '';
-                mangaData.forEach((manga, index) => {
-                    list.innerHTML += `
-                        <div class="card" onclick="showDetail(${index})">
-                            <img src="${manga.cover}">
-                            <h3>${manga.title}</h3>
-                        </div>`;
-                });
-            } catch (e) { console.error("Veri yüklenemedi!", e); }
-        }
+        async function fetchData() {
+    try {
+        // Önce ana listeyi (dosya isimlerini) alıyoruz
+        const response = await fetch('data.json');
+        const mangaFiles = await response.json();
 
-        function showDetail(index) {
-            const manga = mangaData[index];
-            const detail = document.getElementById('detail');
-            const content = document.getElementById('detail-content');
-            content.innerHTML = `
-                <img src="${manga.cover}" style="width:100px; border-radius:10px;">
-                <h2>${manga.title}</h2>
+        const mangaList = document.getElementById('manga-list');
+        mangaList.innerHTML = ""; // Listeyi temizle
+
+        // Her bir JSON dosyası için veriyi çekiyoruz
+        for (const file of mangaFiles) {
+            const res = await fetch(file);
+            const manga = await res.json();
+            
+            // Kartı oluştur ve ekrana ekle
+            const card = document.createElement('div');
+            card.className = 'manga-card';
+            card.innerHTML = `
+                <img src="${manga.cover}" alt="${manga.title}">
+                <h3>${manga.title}</h3>
                 <p>${manga.desc}</p>
-                <hr style="border:0.5px solid #333">
-                ${manga.chapters.map((ch, i) => `<a href="#" class="chapter-btn" onclick="openReader(${index}, ${i})">${ch.name}</a>`).join('')}
             `;
-            detail.style.display = 'block';
+            card.onclick = () => showChapters(manga);
+            mangaList.appendChild(card);
         }
-
-        function openReader(mIndex, cIndex) {
-            const images = mangaData[mIndex].chapters[cIndex].images;
-            const container = document.getElementById('reader-images');
-            container.innerHTML = images.map(img => `<img src="${img}" class="reader-img">`).join('');
-            document.getElementById('reader').style.display = 'block';
+    } catch (error) {
+        console.error("Veri çekme hatası:", error);
+    }
         }
 
         loadManga();
