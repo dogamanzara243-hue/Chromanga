@@ -61,7 +61,6 @@
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
-        /* Okuma Paneli */
         #reader {
             display: none;
             max-width: 800px;
@@ -114,17 +113,17 @@
     </div>
 
     <script>
-        // 1. VERİLERİ ÇEKME (YENİ SİSTEM)
+        // YENİ SİSTEM: LİSTEYİ OKU VE DOSYALARI ÇEK
         async function fetchData() {
             const mangaListDiv = document.getElementById('manga-list');
             try {
-                // data.json dosyasından dosya isimlerini alıyoruz
+                // 1. Önce data.json'dan dosya isimlerini alıyoruz
                 const response = await fetch('data.json');
                 const mangaFiles = await response.json();
 
-                mangaListDiv.innerHTML = ""; // Yükleniyor yazısını sil
+                mangaListDiv.innerHTML = ""; 
 
-                // Her bir dosya (akame.json vb.) için veriyi çekiyoruz
+                // 2. Listedeki her bir JSON dosyası (akame.json, primal.json vb.) için döngü
                 for (const fileName of mangaFiles) {
                     try {
                         const res = await fetch(fileName);
@@ -146,11 +145,10 @@
                     }
                 }
             } catch (error) {
-                mangaListDiv.innerHTML = "<p>Veriler yüklenirken hata oluştu. Lütfen data.json dosyasını kontrol edin.</p>";
+                mangaListDiv.innerHTML = "<p>Hata: data.json okunamadı.</p>";
             }
         }
 
-        // 2. MANGA DETAYLARI VE BÖLÜMLER
         function showMangaDetails(manga) {
             document.getElementById('manga-list').style.display = 'none';
             document.getElementById('main-header').style.display = 'none';
@@ -170,7 +168,6 @@
             });
         }
 
-        // 3. RESİMLERİ GÖSTER
         function showChapterImages(images) {
             document.getElementById('chapter-selection').style.display = 'none';
             const pagesDiv = document.getElementById('manga-pages');
@@ -179,30 +176,26 @@
             images.forEach(imgUrl => {
                 const img = document.createElement('img');
                 img.src = imgUrl;
-                img.loading = "lazy"; // Sayfa hızını artırmak için
+                img.loading = "lazy"; 
                 pagesDiv.appendChild(img);
             });
         }
 
-        // 4. GERİ DÖNÜŞ FONKSİYONU
         function goBack() {
             const pagesDiv = document.getElementById('manga-pages');
             const chapterDiv = document.getElementById('chapter-selection');
 
             if (pagesDiv.innerHTML !== "") {
-                // Eğer resimler açıksa önce bölüm listesine dön
                 pagesDiv.innerHTML = "";
                 chapterDiv.style.display = 'block';
                 window.scrollTo(0,0);
             } else {
-                // Eğer bölüm listesindeyse ana sayfaya dön
                 document.getElementById('reader').style.display = 'none';
                 document.getElementById('manga-list').style.display = 'grid';
                 document.getElementById('main-header').style.display = 'block';
             }
         }
 
-        // Uygulamayı başlat
         fetchData();
     </script>
 </body>
