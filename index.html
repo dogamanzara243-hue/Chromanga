@@ -37,32 +37,38 @@
         let mangaData = [];
 
         async function fetchData() {
+    const mangaList = document.getElementById('manga-list');
     try {
-        // Önce ana listeyi (dosya isimlerini) alıyoruz
+        // data.json içindeki dosya listesini al
         const response = await fetch('data.json');
         const mangaFiles = await response.json();
 
-        const mangaList = document.getElementById('manga-list');
-        mangaList.innerHTML = ""; // Listeyi temizle
+        mangaList.innerHTML = ""; // Temizle
 
-        // Her bir JSON dosyası için veriyi çekiyoruz
-        for (const file of mangaFiles) {
-            const res = await fetch(file);
-            const manga = await res.json();
-            
-            // Kartı oluştur ve ekrana ekle
-            const card = document.createElement('div');
-            card.className = 'manga-card';
-            card.innerHTML = `
-                <img src="${manga.cover}" alt="${manga.title}">
-                <h3>${manga.title}</h3>
-                <p>${manga.desc}</p>
-            `;
-            card.onclick = () => showChapters(manga);
-            mangaList.appendChild(card);
+        // Her bir json dosyası için (akame.json, primal.json vb.) döngü başlat
+        for (const fileName of mangaFiles) {
+            try {
+                const res = await fetch(fileName);
+                const manga = await res.json();
+                
+                const card = document.createElement('div');
+                card.className = 'manga-card';
+                card.innerHTML = `
+                    <img src="${manga.cover}" alt="${manga.title}">
+                    <div class="manga-info">
+                        <h3>${manga.title}</h3>
+                        <p>${manga.desc}</p>
+                    </div>
+                `;
+                card.onclick = () => showChapters(manga);
+                mangaList.appendChild(card);
+            } catch (e) {
+                console.error(fileName + " dosyası yüklenemedi:", e);
+            }
         }
     } catch (error) {
-        console.error("Veri çekme hatası:", error);
+        console.error("Liste yükleme hatası:", error);
+        mangaList.innerHTML = "Mangalar yüklenemedi. Lütfen JSON dosyalarını kontrol edin.";
     }
         }
 
