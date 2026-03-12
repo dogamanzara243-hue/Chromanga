@@ -9,21 +9,27 @@
             "id": "1",
             "name": "Bölüm 01: Başlangıç",
             "images": [
-                "https://via.placeholder.com/800x1200?text=Sayfa+1"
+                "https://picsum.photos/seed/page1/800/1200",
+                "https://picsum.photos/seed/page2/800/1200",
+                "https://picsum.photos/seed/page3/800/1200"
             ]
         },
         {
             "id": "2",
             "name": "Bölüm 02: Gizemli Olay",
             "images": [
-                "https://via.placeholder.com/800x1200?text=Sayfa+2"
+                "https://picsum.photos/seed/page1/800/1200",
+                "https://picsum.photos/seed/page2/800/1200",
+                "https://picsum.photos/seed/page3/800/1200"
             ]
         },
         {
             "id": "3",
             "name": "Bölüm 03: İlk Karşılaşma",
             "images": [
-                "https://via.placeholder.com/800x1200?text=Sayfa+3"
+                "https://picsum.photos/seed/page1/800/1200",
+                "https://picsum.photos/seed/page2/800/1200",
+                "https://picsum.photos/seed/page3/800/1200"
             ]
         }
     ]
