@@ -3,25 +3,51 @@
 <head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to Fight - Chromanga</title>
-    <link rel="stylesheet" href="../style.css">
+    <style>
+        body { background: #0b0b0b; color: white; font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; }
+        .header { background: linear-gradient(rgba(0,0,0,0.7), #0b0b0b), url('../kapaklar/htf.jpg'); background-size: cover; padding: 60px 20px; text-align: center; border-bottom: 3px solid #ff4500; }
+        .container { max-width: 800px; margin: -50px auto 20px; padding: 20px; background: #1a1a1a; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.5); }
+        .manga-meta { display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; }
+        .manga-meta img { width: 180px; border-radius: 8px; border: 2px solid #333; }
+        .info { flex: 1; min-width: 250px; }
+        .desc { color: #aaa; line-height: 1.6; margin: 15px 0; font-size: 14px; }
+        .btn-back { color: #ff4500; text-decoration: none; font-weight: bold; display: inline-block; margin-bottom: 10px; }
+        .chapter-list { margin-top: 30px; }
+        .chapter-item { display: block; background: #252525; color: white; padding: 15px; margin-bottom: 8px; text-decoration: none; border-radius: 5px; border-left: 5px solid #ff4500; transition: 0.3s; }
+        .chapter-item:hover { background: #333; transform: translateX(5px); }
+    </style>
 </head>
-<body style="background:#111; color:white; font-family:sans-serif; padding:20px;">
-    <a href="../index.html" style="color:#ff4500; text-decoration:none;">← Geri Dön</a>
-    <div style="display:flex; gap:20px; background:#222; padding:20px; border-radius:10px; margin-top:20px;">
-        <img src="../kapaklar/How-To-Fight.jpg" style="width:150px; border-radius:5px;">
-        <div><h1>How to Fight</h1><p>Dövüş videolarıyla yükseliş.</p></div>
+<body>
+    <div class="header"></div>
+    <div class="container">
+        <a href="../index.html" class="btn-back">← Ana Sayfaya Dön</a>
+        <div class="manga-meta">
+            <img src="../kapaklar/htf.jpg" alt="How to Fight">
+            <div class="info">
+                <h1 style="margin:0;">How to Fight</h1>
+                <span style="background:#ff4500; padding:3px 8px; border-radius:3px; font-size:12px;">AKSIYON</span>
+                <p class="desc">Zayıf bir lise öğrencisinin, gizemli bir kanal sayesinde dövüşmeyi öğrenerek zorbalara karşı verdiği mücadele.</p>
+            </div>
+        </div>
+        <div class="chapter-list" id="chapter-list">
+            <h3>Bölümler</h3>
+            <p>Yükleniyor...</p>
+        </div>
     </div>
-    <div id="chapters" style="margin-top:30px;"><h3>Bölümler Yükleniyor...</h3></div>
     <script>
-        async function load() {
-            const r = await fetch('../veriler/aksiyon/how-to-fight.json');
-            const d = await r.json();
-            const box = document.getElementById('chapters');
-            box.innerHTML = '<h3>Bölüm Listesi</h3>';
-            d.chapters.forEach(ch => {
-                box.innerHTML += `<a href="../reader.html?manga=how-to-fight&ch=${ch.id}" style="display:block; background:#333; color:white; padding:15px; margin:10px 0; text-decoration:none; border-radius:5px; border-left:4px solid #ff4500;">${ch.name}</a>`;
-            });
+        async function loadChapters() {
+            try {
+                const r = await fetch('../veriler/aksiyon/how-to-fight.json');
+                const d = await r.json();
+                const box = document.getElementById('chapter-list');
+                box.innerHTML = '<h3>Bölümler</h3>';
+                d.chapters.forEach(ch => {
+                    box.innerHTML += `<a href="../reader.html?manga=how-to-fight&ch=${ch.id}" class="chapter-item">${ch.name}</a>`;
+                });
+            } catch(e) {
+                document.getElementById('chapter-list').innerHTML = '<p>Bölümler henüz eklenmemiş.</p>';
+            }
         }
-        load();
+        loadChapters();
     </script>
 </body></html>
