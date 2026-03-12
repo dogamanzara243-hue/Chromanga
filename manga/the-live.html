@@ -4,53 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Live Türkçe Oku - Chromanga</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>The Live - Chromanga</title>
     <style>
-        body { background: #1a1a1a; color: white; font-family: sans-serif; padding: 20px; }
-        .manga-header { display: flex; gap: 20px; background: #2a2a2a; padding: 20px; border-radius: 10px; }
-        .manga-header img { width: 200px; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.5); }
-        .chapter-list { margin-top: 30px; display: grid; gap: 10px; }
-        .chapter-item { background: #333; padding: 15px; border-radius: 5px; text-decoration: none; color: white; transition: 0.3s; }
-        .chapter-item:hover { background: #ff4500; padding-left: 25px; }
-        .back-btn { display: inline-block; margin-bottom: 20px; color: #ff4500; text-decoration: none; }
+        body { background: #121212; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; }
+        .container { max-width: 800px; margin: auto; }
+        .header { display: flex; gap: 20px; background: #1e1e1e; padding: 20px; border-radius: 12px; align-items: center; }
+        .header img { width: 150px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+        .info h1 { margin: 0; color: #ff4500; }
+        .chapters { margin-top: 30px; }
+        .chapter-item { display: block; background: #2a2a2a; padding: 15px; margin-bottom: 8px; border-radius: 6px; text-decoration: none; color: #eee; transition: 0.2s; }
+        .chapter-item:hover { background: #ff4500; color: white; transform: translateX(5px); }
+        .btn-back { color: #aaa; text-decoration: none; display: inline-block; margin-bottom: 15px; }
     </style>
 </head>
 <body>
-    <a href="../index.html" class="back-btn">← Ana Sayfaya Dön</a>
-    <div class="manga-header">
-        <img src="https://raw.githubusercontent.com/dogamanzara243-hue/Chromanga/main/kapaklar/The-Live.jpg" alt="The Live">
-        <div>
-            <h1>The Live</h1>
-            <p>Kayıp ailesini arayan bir adam.</p>
+    <div class="container">
+        <a href="../index.html" class="btn-back">← Ana Sayfaya Dön</a>
+        <div class="header">
+            <img src="https://raw.githubusercontent.com/dogamanzara243-hue/Chromanga/main/kapaklar/The-Live.jpg" alt="The Live">
+            <div class="info">
+                <h1>The Live</h1>
+                <p>Kayıp ailesini arayan bir adam.</p>
+            </div>
+        </div>
+        <div class="chapters" id="chapter-list">
+            <h3>Bölümler Yükleniyor...</h3>
         </div>
     </div>
 
-    <div class="chapter-list" id="bolum-kutusu">
-        <h3>Bölümler Yükleniyor...</h3>
-    </div>
-
     <script>
-        // Bu manganın verisini (.json) çekip bölümleri listeleyelim
-        async function bolumleriGetir() {
+        async function bolumleriCek() {
+            // DOSYA YOLUNU ZORLA (RAW GITHUB ÜZERİNDEN)
+            const url = 'https://raw.githubusercontent.com/dogamanzara243-hue/Chromanga/main/veriler/aksiyon/the-live.json';
             try {
-                const res = await fetch('../veriler/aksiyon/the-live.json');
-                const data = await res.json();
-                const kutu = document.getElementById('bolum-kutusu');
-
+                const r = await fetch(url);
+                const data = await r.json();
+                const box = document.getElementById('chapter-list');
+                box.innerHTML = '<h3>Bölüm Listesi</h3>';
+                
                 if(data.chapters && data.chapters.length > 0) {
-                    kutu.innerHTML = '<h3>Bölüm Listesi</h3>';
                     data.chapters.forEach(ch => {
-                        kutu.innerHTML += `<a href="reader.html?manga=the-live&ch=${ch.id}" class="chapter-item">${ch.name}</a>`;
+                        box.innerHTML += `<a href="#" class="chapter-item">${ch.name}</a>`;
                     });
                 } else {
-                    kutu.innerHTML = '<h3>Henüz bölüm eklenmemiş.</h3><p>Bot bölümleri yakında ekleyecek.</p>';
+                    box.innerHTML += '<p style="color:#666;">Henüz bölüm eklenmemiş.</p>';
                 }
-            } catch (e) {
-                document.getElementById('bolum-kutusu').innerHTML = '<h3>Bölümler şu an yüklenemedi.</h3>';
+            } catch(e) {
+                document.getElementById('chapter-list').innerHTML = '<h3>Hata: Bölümler yüklenemedi.</h3>';
             }
         }
-        bolumleriGetir();
+        bolumleriCek();
     </script>
 </body>
 </html>
