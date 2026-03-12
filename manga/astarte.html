@@ -42,7 +42,7 @@
                 
                 if(data.chapters && data.chapters.length > 0) {
                     data.chapters.forEach(ch => {
-                        box.innerHTML += `<a href="#" class="chapter-item">${ch.name}</a>`;
+                        box.innerHTML += `<a href="../reader.html?manga=astarte&ch=${ch.id}" class="chapter-item">${ch.name}</a>`;
                     });
                 } else {
                     box.innerHTML = '<p>Henüz bölüm eklenmemiş.</p>';
