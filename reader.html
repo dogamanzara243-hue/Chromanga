@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+kook<!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
@@ -41,49 +41,20 @@
 
     <script>
         async function loadChapter() {
-            const params = new URLSearchParams(window.location.search);
-            const manga = params.get('manga');
-            const ch = parseInt(params.get('ch'));
-            const viewer = document.getElementById('viewer');
+    // ... manga ve ch parametrelerini al ...
+    const res = await fetch(`../veriler/romantik/${manga}.json`);
+    const data = await res.json();
+    const chapter = data.chapters.find(c => c.id == ch);
 
-            // Navigasyon butonlarını ayarla
-            document.getElementById('prevBtn').href = `reader.html?manga=${manga}&ch=${ch - 1}`;
-            document.getElementById('nextBtn').href = `reader.html?manga=${manga}&ch=${ch + 1}`;
-
-            try {
-                // 1. Manganın temel verilerini (kaynak linkini) çek
-                const res = await fetch(`../veriler/romantik/${manga}.json`);
-                const data = await res.json();
-                
-                // 2. Proxy üzerinden kaynağa bağlan
-                const targetUrl = `${data.kaynak_link}bolum-${ch}/`;
-                const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(targetUrl)}`;
-                
-                const response = await fetch(proxyUrl);
-                const result = await response.json();
-                
-                const parser = new DOMParser();
-                const doc = parser.parseFromString(result.contents, 'text/html');
-                
-                // Mangazure/Madara teması resimlerini bul
-                const images = Array.from(doc.querySelectorAll('.reading-content img'));
-
-                if(images.length > 0) {
-                    viewer.innerHTML = '';
-                    images.forEach(img => {
-                        const newImg = document.createElement('img');
-                        // Lazy load varsa data-src'yi, yoksa normal src'yi al
-                        newImg.src = img.getAttribute('data-src') || img.getAttribute('data-lazy-src') || img.src;
-                        viewer.appendChild(newImg);
-                    });
-                } else {
-                    viewer.innerHTML = '<div class="loading">Bu bölüm henüz yüklenmemiş veya kaynak site engelliyor.</div>';
-                }
-            } catch (e) {
-                viewer.innerHTML = '<div class="loading">Hata: Kaynak bağlantısı kurulamadı.</div>';
-            }
-        }
-        loadChapter();
+    if (chapter && chapter.images.length > 0) {
+        viewer.innerHTML = '';
+        chapter.images.forEach(imgUrl => {
+            const img = document.createElement('img');
+            img.src = imgUrl; // Artık bu link Cloudinary linki olacak
+            viewer.appendChild(img);
+        });
+    }
+}
     </script>
 </body>
 </html>
