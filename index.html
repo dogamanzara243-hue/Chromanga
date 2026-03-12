@@ -27,54 +27,56 @@
     <div id="ana-icerik">
         </div>
 
-    <script>
-    // Ana Listeyi Çek ve Kategorilere Ayır
-    fetch('ayarlar/is_listesi.json')
+<script>
+    // GitHub Pages için dosya yolunu dinamik hale getirdik
+    const dosyaYolu = 'ayarlar/is_listesi.json';
+
+    fetch(dosyaYolu)
         .then(res => {
-            if (!res.ok) throw new Error('Liste yüklenemedi!');
+            if (!res.ok) throw new Error('Dosya bulunamadı: ' + res.status);
             return res.json();
         })
         .then(data => {
+            const container = document.getElementById('ana-icerik');
+            container.innerHTML = ''; 
+
             const gruplar = {};
             data.forEach(manga => {
-                // Kategori yoksa oluştur, varsa içine ekle
-                if(!gruplar[manga.type]) {
-                    gruplar[manga.type] = [];
-                }
+                if(!gruplar[manga.type]) gruplar[manga.type] = [];
                 gruplar[manga.type].push(manga);
             });
 
-            const container = document.getElementById('ana-icerik');
-            container.innerHTML = ''; // İçini temizle
-
             for(let tur in gruplar) {
-                // Kategori Başlığı
-                const baslik = document.createElement('h2');
-                baslik.className = 'kategori-baslik';
-                baslik.innerText = tur.charAt(0).toUpperCase() + tur.slice(1); // İlk harfi büyüt
+                const section = document.createElement('section');
+                section.innerHTML = `<h2 class="kategori-baslik">${tur.toUpperCase()}</h2>`;
                 
-                // Manga Listesi Kabı
                 const liste = document.createElement('div');
                 liste.className = 'manga-listesi';
 
                 gruplar[tur].forEach(manga => {
+                    // Resim yolu kontrolü: kapaklar/ klasöründen alıyor
+                    const resimYolu = `kapaklar/${manga.cover}`;
+                    
                     liste.innerHTML += `
                         <a href="manga/${manga.url}.html" class="manga-kart">
-                            <img src="kapaklar/${manga.cover}" alt="${manga.title}" onerror="this.src='https://via.placeholder.com/150x220?text=Resim+Yok'">
+                            <img src="${resimYolu}" alt="${manga.title}" onerror="this.src='https://via.placeholder.com/150x220?text=Resim+Yuklenemedi'">
                             <h3>${manga.title}</h3>
                         </a>
                     `;
                 });
 
-                container.appendChild(baslik);
-                container.appendChild(liste);
+                section.appendChild(liste);
+                container.appendChild(section);
             }
         })
         .catch(err => {
-            console.error(err);
-            document.getElementById('ana-icerik').innerHTML = '<p style="color:red; text-align:center;">Mangalar yüklenirken bir hata oluştu! Lütfen ayarlar/is_listesi.json dosyasını kontrol edin.</p>';
+            console.error('Hata Detayı:', err);
+            document.getElementById('ana-icerik').innerHTML = `
+                <div style="text-align:center; padding:50px;">
+                    <p style="color:#ff4500;">⚠️ Mangalar şu an yüklenemiyor.</p>
+                    <small style="color:#666;">Hata: ${err.message}</small>
+                </div>`;
         });
-            </script>
-
+</script>
 </body>
 </html>
