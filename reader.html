@@ -1,66 +1,58 @@
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Okuyucu - Chromanga</title>
+    <title>Chromanga Okuyucu</title>
     <style>
-        body { background: #0b0b0b; color: #ccc; font-family: sans-serif; margin: 0; padding: 0; }
-        .nav { background: #1a1a1a; padding: 15px; position: sticky; top: 0; display: flex; justify-content: space-between; align-items: center; z-index: 1000; border-bottom: 2px solid #ff4500; }
-        .btn { background: #ff4500; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none; font-weight: bold; }
-        .content { width: 100%; text-align: center; padding: 10px 0; }
-        .content img { width: 100%; max-width: 800px; display: block; margin: 0 auto; min-height: 200px; background: #222; margin-bottom: 2px; }
-        .error-msg { padding: 50px; color: #ff4500; }
+        body { background: #050505; color: white; margin: 0; display: flex; flex-direction: column; align-items: center; }
+        #viewer { width: 100%; max-width: 800px; }
+        #viewer img { width: 100%; display: block; margin-bottom: 2px; }
+        .loading { padding: 50px; text-align: center; font-family: sans-serif; color: #ff4500; }
     </style>
 </head>
 <body>
-    <div class="nav">
-        <a href="javascript:history.back()" class="btn">← Geri</a>
-        <h2 id="manga-title" style="font-size:16px; margin:0;">Bölüm Yükleniyor...</h2>
-        <div style="width:40px;"></div>
-    </div>
-    <div class="content" id="image-list">
-        <p>Resimler hazırlanıyor, lütfen bekleyin...</p>
-    </div>
+    <div id="viewer"><div class="loading">Bölüm Hazırlanıyor, Lütfen Bekleyin...</div></div>
 
     <script>
-        async function resimleriGetir() {
-            const p = new URLSearchParams(window.location.search);
-            const slug = p.get('manga');
-            const chId = p.get('ch');
-            const box = document.getElementById('image-list');
+        async function loadChapter() {
+            const params = new URLSearchParams(window.location.search);
+            const manga = params.get('manga');
+            const ch = params.get('ch');
+            const viewer = document.getElementById('viewer');
 
-            // TÜM KATEGORİLERİ VE YOLLARI DENEYEN SÜPER DÖNGÜ
-            const kategoriler = ['aksiyon', 'romantik', 'sistem', 'fantazi', 'dram'];
-            let data = null;
-
-            for(let kat of kategoriler) {
-                try {
-                    const url = `https://raw.githubusercontent.com/dogamanzara243-hue/Chromanga/main/veriler/${kat}/${slug}.json`;
-                    const r = await fetch(url);
-                    if(r.ok) {
-                        data = await r.json();
-                        console.log("Veri bulundu: ", kat);
-                        break;
-                    }
-                } catch(e) {}
-            }
-
-            if(data) {
-                document.getElementById('manga-title').innerText = data.title + " - Bölüm " + chId;
-                const ch = data.chapters.find(c => c.id == chId);
+            try {
+                // 1. Kendi verilerinden manganın kaynak linkini bul
+                const res = await fetch(`../veriler/romantik/${manga}.json`); // Tür dinamik yapılabilir
+                const data = await res.json();
                 
-                if(ch && ch.images && ch.images.length > 0) {
-                    box.innerHTML = ch.images.map(img => `<img src="${img}" alt="Sayfa Yüklenemedi" onerror="this.src='https://via.placeholder.com/800x1200?text=Resim+Linki+Hatali'">`).join('');
+                // 2. Proxy üzerinden Mangazure'den canlı resimleri çek
+                // (Allorigins proxy'si sayesinde engel aşılıyor)
+                const targetUrl = `${data.kaynak_link}bolum-${ch}/`;
+                const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(targetUrl)}`;
+                
+                const response = await fetch(proxyUrl);
+                const result = await response.json();
+                
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(result.contents, 'text/html');
+                const images = Array.from(doc.querySelectorAll('.reading-content img'));
+
+                if(images.length > 0) {
+                    viewer.innerHTML = '';
+                    images.forEach(img => {
+                        const newImg = document.createElement('img');
+                        newImg.src = img.getAttribute('data-src') || img.src;
+                        viewer.appendChild(newImg);
+                    });
                 } else {
-                    box.innerHTML = '<div class="error-msg">⚠️ Bu bölümün resim linkleri .json dosyasında bulunamadı!</div>';
+                    viewer.innerHTML = '<div class="loading">Resimler çekilemedi. Kaynak site korumalı olabilir.</div>';
                 }
-            } else {
-                box.innerHTML = '<div class="error-msg">❌ Manga verisi çekilemedi. Bağlantınızı kontrol edin.</div>';
+            } catch (e) {
+                viewer.innerHTML = '<div class="loading">Hata: Bölüm yüklenemedi.</div>';
             }
         }
-        window.onload = resimleriGetir;
+        loadChapter();
     </script>
 </body>
 </html>
