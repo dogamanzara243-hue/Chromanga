@@ -1,36 +1,1095 @@
 {
     "title": "How to Fight",
-    "url": "https://mangazure.net/manga/how-to-fight/",
-    "cover": "https://raw.githubusercontent.com/dogamanzara243-hue/Chromanga/main/kapaklar/How-To-Fight.jpg",
-    "type": "aksiyon",
-    "desc": "Dövüş videolarıyla yükseliş.",
     "chapters": [
         {
             "id": "1",
-            "name": "Bölüm 01: Başlangıç",
-            "images": [
-                "https://picsum.photos/seed/page1/800/1200",
-                "https://picsum.photos/seed/page2/800/1200",
-                "https://picsum.photos/seed/page3/800/1200"
-            ]
+            "name": "B\u00f6l\u00fcm 1",
+            "images": []
         },
         {
             "id": "2",
-            "name": "Bölüm 02: Gizemli Olay",
-            "images": [
-                "https://picsum.photos/seed/page1/800/1200",
-                "https://picsum.photos/seed/page2/800/1200",
-                "https://picsum.photos/seed/page3/800/1200"
-            ]
+            "name": "B\u00f6l\u00fcm 2",
+            "images": []
         },
         {
             "id": "3",
-            "name": "Bölüm 03: İlk Karşılaşma",
-            "images": [
-                "https://picsum.photos/seed/page1/800/1200",
-                "https://picsum.photos/seed/page2/800/1200",
-                "https://picsum.photos/seed/page3/800/1200"
-            ]
+            "name": "B\u00f6l\u00fcm 3",
+            "images": []
+        },
+        {
+            "id": "4",
+            "name": "B\u00f6l\u00fcm 4",
+            "images": []
+        },
+        {
+            "id": "5",
+            "name": "B\u00f6l\u00fcm 5",
+            "images": []
+        },
+        {
+            "id": "6",
+            "name": "B\u00f6l\u00fcm 6",
+            "images": []
+        },
+        {
+            "id": "7",
+            "name": "B\u00f6l\u00fcm 7",
+            "images": []
+        },
+        {
+            "id": "8",
+            "name": "B\u00f6l\u00fcm 8",
+            "images": []
+        },
+        {
+            "id": "9",
+            "name": "B\u00f6l\u00fcm 9",
+            "images": []
+        },
+        {
+            "id": "10",
+            "name": "B\u00f6l\u00fcm 10",
+            "images": []
+        },
+        {
+            "id": "11",
+            "name": "B\u00f6l\u00fcm 11",
+            "images": []
+        },
+        {
+            "id": "12",
+            "name": "B\u00f6l\u00fcm 12",
+            "images": []
+        },
+        {
+            "id": "13",
+            "name": "B\u00f6l\u00fcm 13",
+            "images": []
+        },
+        {
+            "id": "14",
+            "name": "B\u00f6l\u00fcm 14",
+            "images": []
+        },
+        {
+            "id": "15",
+            "name": "B\u00f6l\u00fcm 15",
+            "images": []
+        },
+        {
+            "id": "16",
+            "name": "B\u00f6l\u00fcm 16",
+            "images": []
+        },
+        {
+            "id": "17",
+            "name": "B\u00f6l\u00fcm 17",
+            "images": []
+        },
+        {
+            "id": "18",
+            "name": "B\u00f6l\u00fcm 18",
+            "images": []
+        },
+        {
+            "id": "19",
+            "name": "B\u00f6l\u00fcm 19",
+            "images": []
+        },
+        {
+            "id": "20",
+            "name": "B\u00f6l\u00fcm 20",
+            "images": []
+        },
+        {
+            "id": "21",
+            "name": "B\u00f6l\u00fcm 21",
+            "images": []
+        },
+        {
+            "id": "22",
+            "name": "B\u00f6l\u00fcm 22",
+            "images": []
+        },
+        {
+            "id": "23",
+            "name": "B\u00f6l\u00fcm 23",
+            "images": []
+        },
+        {
+            "id": "24",
+            "name": "B\u00f6l\u00fcm 24",
+            "images": []
+        },
+        {
+            "id": "25",
+            "name": "B\u00f6l\u00fcm 25",
+            "images": []
+        },
+        {
+            "id": "26",
+            "name": "B\u00f6l\u00fcm 26",
+            "images": []
+        },
+        {
+            "id": "27",
+            "name": "B\u00f6l\u00fcm 27",
+            "images": []
+        },
+        {
+            "id": "28",
+            "name": "B\u00f6l\u00fcm 28",
+            "images": []
+        },
+        {
+            "id": "29",
+            "name": "B\u00f6l\u00fcm 29",
+            "images": []
+        },
+        {
+            "id": "30",
+            "name": "B\u00f6l\u00fcm 30",
+            "images": []
+        },
+        {
+            "id": "31",
+            "name": "B\u00f6l\u00fcm 31",
+            "images": []
+        },
+        {
+            "id": "32",
+            "name": "B\u00f6l\u00fcm 32",
+            "images": []
+        },
+        {
+            "id": "33",
+            "name": "B\u00f6l\u00fcm 33",
+            "images": []
+        },
+        {
+            "id": "34",
+            "name": "B\u00f6l\u00fcm 34",
+            "images": []
+        },
+        {
+            "id": "35",
+            "name": "B\u00f6l\u00fcm 35",
+            "images": []
+        },
+        {
+            "id": "36",
+            "name": "B\u00f6l\u00fcm 36",
+            "images": []
+        },
+        {
+            "id": "37",
+            "name": "B\u00f6l\u00fcm 37",
+            "images": []
+        },
+        {
+            "id": "38",
+            "name": "B\u00f6l\u00fcm 38",
+            "images": []
+        },
+        {
+            "id": "39",
+            "name": "B\u00f6l\u00fcm 39",
+            "images": []
+        },
+        {
+            "id": "40",
+            "name": "B\u00f6l\u00fcm 40",
+            "images": []
+        },
+        {
+            "id": "41",
+            "name": "B\u00f6l\u00fcm 41",
+            "images": []
+        },
+        {
+            "id": "42",
+            "name": "B\u00f6l\u00fcm 42",
+            "images": []
+        },
+        {
+            "id": "43",
+            "name": "B\u00f6l\u00fcm 43",
+            "images": []
+        },
+        {
+            "id": "44",
+            "name": "B\u00f6l\u00fcm 44",
+            "images": []
+        },
+        {
+            "id": "45",
+            "name": "B\u00f6l\u00fcm 45",
+            "images": []
+        },
+        {
+            "id": "46",
+            "name": "B\u00f6l\u00fcm 46",
+            "images": []
+        },
+        {
+            "id": "47",
+            "name": "B\u00f6l\u00fcm 47",
+            "images": []
+        },
+        {
+            "id": "48",
+            "name": "B\u00f6l\u00fcm 48",
+            "images": []
+        },
+        {
+            "id": "49",
+            "name": "B\u00f6l\u00fcm 49",
+            "images": []
+        },
+        {
+            "id": "50",
+            "name": "B\u00f6l\u00fcm 50",
+            "images": []
+        },
+        {
+            "id": "51",
+            "name": "B\u00f6l\u00fcm 51",
+            "images": []
+        },
+        {
+            "id": "52",
+            "name": "B\u00f6l\u00fcm 52",
+            "images": []
+        },
+        {
+            "id": "53",
+            "name": "B\u00f6l\u00fcm 53",
+            "images": []
+        },
+        {
+            "id": "54",
+            "name": "B\u00f6l\u00fcm 54",
+            "images": []
+        },
+        {
+            "id": "55",
+            "name": "B\u00f6l\u00fcm 55",
+            "images": []
+        },
+        {
+            "id": "56",
+            "name": "B\u00f6l\u00fcm 56",
+            "images": []
+        },
+        {
+            "id": "57",
+            "name": "B\u00f6l\u00fcm 57",
+            "images": []
+        },
+        {
+            "id": "58",
+            "name": "B\u00f6l\u00fcm 58",
+            "images": []
+        },
+        {
+            "id": "59",
+            "name": "B\u00f6l\u00fcm 59",
+            "images": []
+        },
+        {
+            "id": "60",
+            "name": "B\u00f6l\u00fcm 60",
+            "images": []
+        },
+        {
+            "id": "61",
+            "name": "B\u00f6l\u00fcm 61",
+            "images": []
+        },
+        {
+            "id": "62",
+            "name": "B\u00f6l\u00fcm 62",
+            "images": []
+        },
+        {
+            "id": "63",
+            "name": "B\u00f6l\u00fcm 63",
+            "images": []
+        },
+        {
+            "id": "64",
+            "name": "B\u00f6l\u00fcm 64",
+            "images": []
+        },
+        {
+            "id": "65",
+            "name": "B\u00f6l\u00fcm 65",
+            "images": []
+        },
+        {
+            "id": "66",
+            "name": "B\u00f6l\u00fcm 66",
+            "images": []
+        },
+        {
+            "id": "67",
+            "name": "B\u00f6l\u00fcm 67",
+            "images": []
+        },
+        {
+            "id": "68",
+            "name": "B\u00f6l\u00fcm 68",
+            "images": []
+        },
+        {
+            "id": "69",
+            "name": "B\u00f6l\u00fcm 69",
+            "images": []
+        },
+        {
+            "id": "70",
+            "name": "B\u00f6l\u00fcm 70",
+            "images": []
+        },
+        {
+            "id": "B\u00f6l\u00fcm71",
+            "name": "B\u00f6l\u00fcm71",
+            "images": []
+        },
+        {
+            "id": "72",
+            "name": "B\u00f6l\u00fcm 72",
+            "images": []
+        },
+        {
+            "id": "73",
+            "name": "B\u00f6l\u00fcm 73",
+            "images": []
+        },
+        {
+            "id": "74",
+            "name": "B\u00f6l\u00fcm 74",
+            "images": []
+        },
+        {
+            "id": "75",
+            "name": "B\u00f6l\u00fcm 75",
+            "images": []
+        },
+        {
+            "id": "76",
+            "name": "B\u00f6l\u00fcm 76",
+            "images": []
+        },
+        {
+            "id": "77",
+            "name": "B\u00f6l\u00fcm 77",
+            "images": []
+        },
+        {
+            "id": "78",
+            "name": "B\u00f6l\u00fcm 78",
+            "images": []
+        },
+        {
+            "id": "79",
+            "name": "B\u00f6l\u00fcm 79",
+            "images": []
+        },
+        {
+            "id": "80",
+            "name": "B\u00f6l\u00fcm 80",
+            "images": []
+        },
+        {
+            "id": "81",
+            "name": "B\u00f6l\u00fcm 81",
+            "images": []
+        },
+        {
+            "id": "82",
+            "name": "B\u00f6l\u00fcm 82",
+            "images": []
+        },
+        {
+            "id": "83",
+            "name": "B\u00f6l\u00fcm 83",
+            "images": []
+        },
+        {
+            "id": "84",
+            "name": "B\u00f6l\u00fcm 84",
+            "images": []
+        },
+        {
+            "id": "85",
+            "name": "B\u00f6l\u00fcm 85",
+            "images": []
+        },
+        {
+            "id": "86",
+            "name": "B\u00f6l\u00fcm 86",
+            "images": []
+        },
+        {
+            "id": "87",
+            "name": "B\u00f6l\u00fcm 87",
+            "images": []
+        },
+        {
+            "id": "88",
+            "name": "B\u00f6l\u00fcm 88",
+            "images": []
+        },
+        {
+            "id": "89",
+            "name": "B\u00f6l\u00fcm 89",
+            "images": []
+        },
+        {
+            "id": "90",
+            "name": "B\u00f6l\u00fcm 90",
+            "images": []
+        },
+        {
+            "id": "91",
+            "name": "B\u00f6l\u00fcm 91",
+            "images": []
+        },
+        {
+            "id": "92",
+            "name": "B\u00f6l\u00fcm 92",
+            "images": []
+        },
+        {
+            "id": "93",
+            "name": "B\u00f6l\u00fcm 93",
+            "images": []
+        },
+        {
+            "id": "94",
+            "name": "B\u00f6l\u00fcm 94",
+            "images": []
+        },
+        {
+            "id": "95",
+            "name": "B\u00f6l\u00fcm 95",
+            "images": []
+        },
+        {
+            "id": "96",
+            "name": "B\u00f6l\u00fcm 96",
+            "images": []
+        },
+        {
+            "id": "97",
+            "name": "B\u00f6l\u00fcm 97",
+            "images": []
+        },
+        {
+            "id": "98",
+            "name": "B\u00f6l\u00fcm 98",
+            "images": []
+        },
+        {
+            "id": "99",
+            "name": "B\u00f6l\u00fcm 99",
+            "images": []
+        },
+        {
+            "id": "100",
+            "name": "B\u00f6l\u00fcm 100",
+            "images": []
+        },
+        {
+            "id": "101",
+            "name": "B\u00f6l\u00fcm 101",
+            "images": []
+        },
+        {
+            "id": "102",
+            "name": "B\u00f6l\u00fcm 102",
+            "images": []
+        },
+        {
+            "id": "103",
+            "name": "B\u00f6l\u00fcm 103",
+            "images": []
+        },
+        {
+            "id": "104",
+            "name": "B\u00f6l\u00fcm 104",
+            "images": []
+        },
+        {
+            "id": "105",
+            "name": "B\u00f6l\u00fcm 105",
+            "images": []
+        },
+        {
+            "id": "106",
+            "name": "B\u00f6l\u00fcm 106",
+            "images": []
+        },
+        {
+            "id": "107",
+            "name": "B\u00f6l\u00fcm 107",
+            "images": []
+        },
+        {
+            "id": "108",
+            "name": "B\u00f6l\u00fcm 108",
+            "images": []
+        },
+        {
+            "id": "109",
+            "name": "B\u00f6l\u00fcm 109",
+            "images": []
+        },
+        {
+            "id": "110",
+            "name": "B\u00f6l\u00fcm 110",
+            "images": []
+        },
+        {
+            "id": "111",
+            "name": "B\u00f6l\u00fcm 111",
+            "images": []
+        },
+        {
+            "id": "112",
+            "name": "B\u00f6l\u00fcm 112",
+            "images": []
+        },
+        {
+            "id": "113",
+            "name": "B\u00f6l\u00fcm 113",
+            "images": []
+        },
+        {
+            "id": "114",
+            "name": "B\u00f6l\u00fcm 114",
+            "images": []
+        },
+        {
+            "id": "115",
+            "name": "B\u00f6l\u00fcm 115",
+            "images": []
+        },
+        {
+            "id": "116",
+            "name": "B\u00f6l\u00fcm 116",
+            "images": []
+        },
+        {
+            "id": "117",
+            "name": "B\u00f6l\u00fcm 117",
+            "images": []
+        },
+        {
+            "id": "118",
+            "name": "B\u00f6l\u00fcm 118",
+            "images": []
+        },
+        {
+            "id": "119",
+            "name": "B\u00f6l\u00fcm 119",
+            "images": []
+        },
+        {
+            "id": "120",
+            "name": "B\u00f6l\u00fcm 120",
+            "images": []
+        },
+        {
+            "id": "121",
+            "name": "B\u00f6l\u00fcm 121",
+            "images": []
+        },
+        {
+            "id": "122",
+            "name": "B\u00f6l\u00fcm 122",
+            "images": []
+        },
+        {
+            "id": "123",
+            "name": "B\u00f6l\u00fcm 123",
+            "images": []
+        },
+        {
+            "id": "124",
+            "name": "B\u00f6l\u00fcm 124",
+            "images": []
+        },
+        {
+            "id": "125",
+            "name": "B\u00f6l\u00fcm 125",
+            "images": []
+        },
+        {
+            "id": "126",
+            "name": "B\u00f6l\u00fcm 126",
+            "images": []
+        },
+        {
+            "id": "127",
+            "name": "B\u00f6l\u00fcm 127",
+            "images": []
+        },
+        {
+            "id": "128",
+            "name": "B\u00f6l\u00fcm 128",
+            "images": []
+        },
+        {
+            "id": "129",
+            "name": "B\u00f6l\u00fcm 129",
+            "images": []
+        },
+        {
+            "id": "130",
+            "name": "B\u00f6l\u00fcm 130",
+            "images": []
+        },
+        {
+            "id": "131",
+            "name": "B\u00f6l\u00fcm 131",
+            "images": []
+        },
+        {
+            "id": "132",
+            "name": "B\u00f6l\u00fcm 132",
+            "images": []
+        },
+        {
+            "id": "133",
+            "name": "B\u00f6l\u00fcm 133",
+            "images": []
+        },
+        {
+            "id": "134",
+            "name": "B\u00f6l\u00fcm 134",
+            "images": []
+        },
+        {
+            "id": "135",
+            "name": "B\u00f6l\u00fcm 135",
+            "images": []
+        },
+        {
+            "id": "136",
+            "name": "B\u00f6l\u00fcm 136",
+            "images": []
+        },
+        {
+            "id": "137",
+            "name": "B\u00f6l\u00fcm 137",
+            "images": []
+        },
+        {
+            "id": "138",
+            "name": "B\u00f6l\u00fcm 138",
+            "images": []
+        },
+        {
+            "id": "139",
+            "name": "B\u00f6l\u00fcm 139",
+            "images": []
+        },
+        {
+            "id": "140",
+            "name": "B\u00f6l\u00fcm 140",
+            "images": []
+        },
+        {
+            "id": "141",
+            "name": "B\u00f6l\u00fcm 141",
+            "images": []
+        },
+        {
+            "id": "142",
+            "name": "B\u00f6l\u00fcm 142",
+            "images": []
+        },
+        {
+            "id": "143",
+            "name": "B\u00f6l\u00fcm 143",
+            "images": []
+        },
+        {
+            "id": "144",
+            "name": "B\u00f6l\u00fcm 144",
+            "images": []
+        },
+        {
+            "id": "145",
+            "name": "B\u00f6l\u00fcm 145",
+            "images": []
+        },
+        {
+            "id": "146",
+            "name": "B\u00f6l\u00fcm 146",
+            "images": []
+        },
+        {
+            "id": "147",
+            "name": "B\u00f6l\u00fcm 147",
+            "images": []
+        },
+        {
+            "id": "148",
+            "name": "B\u00f6l\u00fcm 148",
+            "images": []
+        },
+        {
+            "id": "149",
+            "name": "B\u00f6l\u00fcm 149",
+            "images": []
+        },
+        {
+            "id": "150",
+            "name": "B\u00f6l\u00fcm 150",
+            "images": []
+        },
+        {
+            "id": "151",
+            "name": "B\u00f6l\u00fcm 151",
+            "images": []
+        },
+        {
+            "id": "152",
+            "name": "B\u00f6l\u00fcm 152",
+            "images": []
+        },
+        {
+            "id": "153",
+            "name": "B\u00f6l\u00fcm 153",
+            "images": []
+        },
+        {
+            "id": "154",
+            "name": "B\u00f6l\u00fcm 154",
+            "images": []
+        },
+        {
+            "id": "155",
+            "name": "B\u00f6l\u00fcm 155",
+            "images": []
+        },
+        {
+            "id": "156",
+            "name": "B\u00f6l\u00fcm 156",
+            "images": []
+        },
+        {
+            "id": "157",
+            "name": "B\u00f6l\u00fcm 157",
+            "images": []
+        },
+        {
+            "id": "158",
+            "name": "B\u00f6l\u00fcm 158",
+            "images": []
+        },
+        {
+            "id": "159",
+            "name": "B\u00f6l\u00fcm 159",
+            "images": []
+        },
+        {
+            "id": "160",
+            "name": "B\u00f6l\u00fcm 160",
+            "images": []
+        },
+        {
+            "id": "161",
+            "name": "B\u00f6l\u00fcm 161",
+            "images": []
+        },
+        {
+            "id": "162",
+            "name": "B\u00f6l\u00fcm 162",
+            "images": []
+        },
+        {
+            "id": "163",
+            "name": "B\u00f6l\u00fcm 163",
+            "images": []
+        },
+        {
+            "id": "164",
+            "name": "B\u00f6l\u00fcm 164",
+            "images": []
+        },
+        {
+            "id": "165",
+            "name": "B\u00f6l\u00fcm 165",
+            "images": []
+        },
+        {
+            "id": "166",
+            "name": "B\u00f6l\u00fcm 166",
+            "images": []
+        },
+        {
+            "id": "167",
+            "name": "B\u00f6l\u00fcm 167",
+            "images": []
+        },
+        {
+            "id": "168",
+            "name": "B\u00f6l\u00fcm 168",
+            "images": []
+        },
+        {
+            "id": "169",
+            "name": "B\u00f6l\u00fcm 169",
+            "images": []
+        },
+        {
+            "id": "170",
+            "name": "B\u00f6l\u00fcm 170",
+            "images": []
+        },
+        {
+            "id": "171",
+            "name": "B\u00f6l\u00fcm 171",
+            "images": []
+        },
+        {
+            "id": "172",
+            "name": "B\u00f6l\u00fcm 172",
+            "images": []
+        },
+        {
+            "id": "173",
+            "name": "B\u00f6l\u00fcm 173",
+            "images": []
+        },
+        {
+            "id": "174",
+            "name": "B\u00f6l\u00fcm 174",
+            "images": []
+        },
+        {
+            "id": "175",
+            "name": "B\u00f6l\u00fcm 175",
+            "images": []
+        },
+        {
+            "id": "176",
+            "name": "B\u00f6l\u00fcm 176",
+            "images": []
+        },
+        {
+            "id": "177",
+            "name": "B\u00f6l\u00fcm 177",
+            "images": []
+        },
+        {
+            "id": "178",
+            "name": "B\u00f6l\u00fcm 178",
+            "images": []
+        },
+        {
+            "id": "179",
+            "name": "B\u00f6l\u00fcm 179",
+            "images": []
+        },
+        {
+            "id": "180",
+            "name": "B\u00f6l\u00fcm 180",
+            "images": []
+        },
+        {
+            "id": "181",
+            "name": "B\u00f6l\u00fcm 181",
+            "images": []
+        },
+        {
+            "id": "182",
+            "name": "B\u00f6l\u00fcm 182",
+            "images": []
+        },
+        {
+            "id": "183",
+            "name": "B\u00f6l\u00fcm 183",
+            "images": []
+        },
+        {
+            "id": "184",
+            "name": "B\u00f6l\u00fcm 184",
+            "images": []
+        },
+        {
+            "id": "185",
+            "name": "B\u00f6l\u00fcm 185",
+            "images": []
+        },
+        {
+            "id": "186",
+            "name": "B\u00f6l\u00fcm 186",
+            "images": []
+        },
+        {
+            "id": "187",
+            "name": "B\u00f6l\u00fcm 187",
+            "images": []
+        },
+        {
+            "id": "188",
+            "name": "B\u00f6l\u00fcm 188",
+            "images": []
+        },
+        {
+            "id": "189",
+            "name": "B\u00f6l\u00fcm 189",
+            "images": []
+        },
+        {
+            "id": "190",
+            "name": "B\u00f6l\u00fcm 190",
+            "images": []
+        },
+        {
+            "id": "191",
+            "name": "B\u00f6l\u00fcm 191",
+            "images": []
+        },
+        {
+            "id": "192",
+            "name": "B\u00f6l\u00fcm 192",
+            "images": []
+        },
+        {
+            "id": "193",
+            "name": "B\u00f6l\u00fcm 193",
+            "images": []
+        },
+        {
+            "id": "194",
+            "name": "B\u00f6l\u00fcm 194",
+            "images": []
+        },
+        {
+            "id": "195",
+            "name": "B\u00f6l\u00fcm 195",
+            "images": []
+        },
+        {
+            "id": "196",
+            "name": "B\u00f6l\u00fcm 196",
+            "images": []
+        },
+        {
+            "id": "197",
+            "name": "B\u00f6l\u00fcm 197",
+            "images": []
+        },
+        {
+            "id": "198",
+            "name": "B\u00f6l\u00fcm 198",
+            "images": []
+        },
+        {
+            "id": "199",
+            "name": "B\u00f6l\u00fcm 199",
+            "images": []
+        },
+        {
+            "id": "200",
+            "name": "B\u00f6l\u00fcm 200",
+            "images": []
+        },
+        {
+            "id": "201",
+            "name": "B\u00f6l\u00fcm 201",
+            "images": []
+        },
+        {
+            "id": "202",
+            "name": "B\u00f6l\u00fcm 202",
+            "images": []
+        },
+        {
+            "id": "203",
+            "name": "B\u00f6l\u00fcm 203",
+            "images": []
+        },
+        {
+            "id": "204",
+            "name": "B\u00f6l\u00fcm 204",
+            "images": []
+        },
+        {
+            "id": "205",
+            "name": "B\u00f6l\u00fcm 205",
+            "images": []
+        },
+        {
+            "id": "206",
+            "name": "B\u00f6l\u00fcm 206",
+            "images": []
+        },
+        {
+            "id": "207",
+            "name": "B\u00f6l\u00fcm 207",
+            "images": []
+        },
+        {
+            "id": "208",
+            "name": "B\u00f6l\u00fcm 208",
+            "images": []
+        },
+        {
+            "id": "209",
+            "name": "B\u00f6l\u00fcm 209",
+            "images": []
+        },
+        {
+            "id": "210",
+            "name": "B\u00f6l\u00fcm 210",
+            "images": []
+        },
+        {
+            "id": "211",
+            "name": "B\u00f6l\u00fcm 211",
+            "images": []
+        },
+        {
+            "id": "212",
+            "name": "B\u00f6l\u00fcm 212",
+            "images": []
+        },
+        {
+            "id": "213",
+            "name": "B\u00f6l\u00fcm 213",
+            "images": []
+        },
+        {
+            "id": "214",
+            "name": "B\u00f6l\u00fcm 214",
+            "images": []
+        },
+        {
+            "id": "215",
+            "name": "B\u00f6l\u00fcm 215",
+            "images": []
+        },
+        {
+            "id": "216",
+            "name": "B\u00f6l\u00fcm 216",
+            "images": []
+        },
+        {
+            "id": "217",
+            "name": "B\u00f6l\u00fcm 217",
+            "images": []
+        },
+        {
+            "id": "218",
+            "name": "B\u00f6l\u00fcm 218",
+            "images": []
         }
     ]
 }
