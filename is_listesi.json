@@ -17,12 +17,7 @@
     "cover": "Mercenary-Enrollment.jpg",
     "desc": "Yıllarca paralı askerlik yapan bir gencin lise hayatına uyum sağlama çabası."
   },
-  {
-    "url": "https://mangazure.net/manga/the-live/",
-    "title": "The Live",
-    "cover": "The-Live.jpg",
-    "desc": "Ailesini kaybeden bir adamın, intikam için girdiği hayatta kalma oyunundaki mücadelesi."
-  },
+  
   {
     "url": "https://mangazure.net/manga/the-lady-and-the-beast/",
     "title": "The Lady and the Beast",
@@ -35,47 +30,13 @@
     "cover": "astarte.jpg",
     "desc": "Sevilmeyen bir prensesin, kaderini ve imparatorluğun geleceğini değiştirme çabası."
   },
-  {
-    "url": "https://mangazure.net/manga/etrangere/",
-    "title": "Etrangere",
-    "cover": "etrangere.jpg",
-    "desc": "Yabancı bir dünyada hayatta kalmaya çalışan bir grubun gizem dolu macerası."
-  },
-  {
-    "url": "https://mangazure.net/manga/sss-class-suicide-hunter/",
-    "title": "SSS-Class Suicide Hunter",
-    "cover": "sss-class-suicide-hunter.jpg",
-    "desc": "Kendi canına kıyarak zamanda geri giden bir avcının zirveye tırmanma hikayesi."
-  },
-  {
-    "url": "https://mangazure.net/manga/swordmasters-youngest-son/",
-    "title": "Swordmaster’s Youngest Son",
-    "cover": "swordmasters-youngest-son.jpg",
-    "desc": "Dışlanan bir evlat, kılıç ustalığında çığır açıyor."
-  },
-  {
-    "url": "https://mangazure.net/manga/the-greatest-estate-developer/",
-    "title": "The Greatest Estate Developer",
-    "cover": "the-greatest-estate-developer.jpg",
-    "desc": "Bir mühendisin fantezi dünyasındaki dev inşaat projesi."
-  },
-  {
-    "url": "https://mangazure.net/manga/im-not-that-kind-of-talent/",
-    "title": "I'm Not That Kind of Talent",
-    "cover": "im-not-that-kind-of-talent.jpg",
-    "desc": "Zayıf görünümlü ama korkunç bir güç barındıran gizemli adam."
-  },
+  
+  
   {
     "url": "https://mangazure.net/manga/nano-machine/",
     "title": "Nano Machine",
     "cover": "nano-machine.jpg",
     "desc": "Gelecekten gelen makinelerle antik dövüş sanatlarının birleşimi."
-  },
-  {
-    "url": "https://mangazure.net/manga/the-heavenly-demon-cant-live-a-normal-life/",
-    "title": "The Heavenly Demon Can’t Live a Normal Life",
-    "cover": "the-heavenly-demon-cant-live-a-normal-life.jpg",
-    "desc": "Efsanevi Gök İblisi, zayıf bir soylunun bedeninde yeniden doğuyor."
   },
   {
     "url": "https://mangazure.net/manga/the-book-eating-magician/",
