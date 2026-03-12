@@ -2,6 +2,22 @@
     "title": "Mercenary Enrollment",
     "cover": "https://raw.githubusercontent.com/dogamanzara243-hue/Chromanga/main/kapaklar/Mercenary-Enrollment.jpg",
     "type": "aksiyon",
-    "desc": "Eski bir paral\u0131 askerin okul hayat\u0131.",
-    "chapters": []
+    "desc": "Eski bir paralı askerin okul hayatı.",
+    "chapters": [
+        {
+            "id": "1",
+            "name": "Bölüm 1: Yeni Bir Başlangıç",
+            "date": "2024-05-20"
+        },
+        {
+            "id": "2",
+            "name": "Bölüm 2: Gizemli Güç",
+            "date": "2024-05-21"
+        },
+        {
+            "id": "3",
+            "name": "Bölüm 3: Büyük Karşılaşma",
+            "date": "2024-05-22"
+        }
+    ]
 }
