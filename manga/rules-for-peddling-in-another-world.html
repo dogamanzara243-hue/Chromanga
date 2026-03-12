@@ -1,22 +1,56 @@
 
-        <!DOCTYPE html>
-        <html lang="tr">
-        <head>
-            <meta charset="UTF-8">
-            <title>Rules for Peddling Türkçe Oku - Chromanga</title>
-            <meta name="description" content="Rules for Peddling manga oku. Başka dünyada ticaret.">
-            <meta name="keywords" content="Rules for Peddling oku, Rules for Peddling türkçe, isekai manga, webtoon oku">
-            <meta property="og:title" content="Rules for Peddling - Chromanga">
-            <meta property="og:image" content="https://raw.githubusercontent.com/dogamanzara243-hue/Chromanga/main/kapaklar/Rules-for-Peddling-in-Another-World.jpg">
-            <link rel="stylesheet" href="../style.css">
-        </head>
-        <body>
-            <div class="manga-container">
-                <h1>Rules for Peddling</h1>
-                <img src="https://raw.githubusercontent.com/dogamanzara243-hue/Chromanga/main/kapaklar/Rules-for-Peddling-in-Another-World.jpg" alt="Rules for Peddling Kapak">
-                <p>Başka dünyada ticaret.</p>
-                <div id="bolumler">Bölümler yükleniyor...</div>
-            </div>
-        </body>
-        </html>
-        
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules for Peddling Türkçe Oku - Chromanga</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body { background: #1a1a1a; color: white; font-family: sans-serif; padding: 20px; }
+        .manga-header { display: flex; gap: 20px; background: #2a2a2a; padding: 20px; border-radius: 10px; }
+        .manga-header img { width: 200px; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.5); }
+        .chapter-list { margin-top: 30px; display: grid; gap: 10px; }
+        .chapter-item { background: #333; padding: 15px; border-radius: 5px; text-decoration: none; color: white; transition: 0.3s; }
+        .chapter-item:hover { background: #ff4500; padding-left: 25px; }
+        .back-btn { display: inline-block; margin-bottom: 20px; color: #ff4500; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back-btn">← Ana Sayfaya Dön</a>
+    <div class="manga-header">
+        <img src="https://raw.githubusercontent.com/dogamanzara243-hue/Chromanga/main/kapaklar/Rules-for-Peddling-in-Another-World.jpg" alt="Rules for Peddling">
+        <div>
+            <h1>Rules for Peddling</h1>
+            <p>Başka dünyada ticaret.</p>
+        </div>
+    </div>
+
+    <div class="chapter-list" id="bolum-kutusu">
+        <h3>Bölümler Yükleniyor...</h3>
+    </div>
+
+    <script>
+        // Bu manganın verisini (.json) çekip bölümleri listeleyelim
+        async function bolumleriGetir() {
+            try {
+                const res = await fetch('../veriler/isekai/rules-for-peddling-in-another-world.json');
+                const data = await res.json();
+                const kutu = document.getElementById('bolum-kutusu');
+
+                if(data.chapters && data.chapters.length > 0) {
+                    kutu.innerHTML = '<h3>Bölüm Listesi</h3>';
+                    data.chapters.forEach(ch => {
+                        kutu.innerHTML += `<a href="reader.html?manga=rules-for-peddling-in-another-world&ch=${ch.id}" class="chapter-item">${ch.name}</a>`;
+                    });
+                } else {
+                    kutu.innerHTML = '<h3>Henüz bölüm eklenmemiş.</h3><p>Bot bölümleri yakında ekleyecek.</p>';
+                }
+            } catch (e) {
+                document.getElementById('bolum-kutusu').innerHTML = '<h3>Bölümler şu an yüklenemedi.</h3>';
+            }
+        }
+        bolumleriGetir();
+    </script>
+</body>
+</html>
