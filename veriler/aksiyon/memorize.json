@@ -2,6 +2,22 @@
     "title": "Memorize",
     "cover": "https://raw.githubusercontent.com/dogamanzara243-hue/Chromanga/main/kapaklar/Memorize.jpg",
     "type": "aksiyon",
-    "desc": "Zamanda geri d\u00f6nen oyuncu.",
-    "chapters": []
+    "desc": "Zamanda geri dönen oyuncu.",
+    "chapters": [
+        {
+            "id": "1",
+            "name": "Bölüm 1: Yeni Bir Başlangıç",
+            "date": "2024-05-20"
+        },
+        {
+            "id": "2",
+            "name": "Bölüm 2: Gizemli Güç",
+            "date": "2024-05-21"
+        },
+        {
+            "id": "3",
+            "name": "Bölüm 3: Büyük Karşılaşma",
+            "date": "2024-05-22"
+        }
+    ]
 }
