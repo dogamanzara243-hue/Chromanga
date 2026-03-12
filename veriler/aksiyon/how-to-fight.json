@@ -2,6 +2,22 @@
     "title": "How to Fight",
     "cover": "https://raw.githubusercontent.com/dogamanzara243-hue/Chromanga/main/kapaklar/How-To-Fight.jpg",
     "type": "aksiyon",
-    "desc": "D\u00f6v\u00fc\u015f videolar\u0131yla y\u00fckseli\u015f.",
-    "chapters": []
+    "desc": "Dövüş videolarıyla yükseliş.",
+    "chapters": [
+        {
+            "id": "1",
+            "name": "Bölüm 1: Yeni Bir Başlangıç",
+            "date": "2024-05-20"
+        },
+        {
+            "id": "2",
+            "name": "Bölüm 2: Gizemli Güç",
+            "date": "2024-05-21"
+        },
+        {
+            "id": "3",
+            "name": "Bölüm 3: Büyük Karşılaşma",
+            "date": "2024-05-22"
+        }
+    ]
 }
