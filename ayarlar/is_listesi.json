@@ -1,37 +1,142 @@
 [
     {
-        "url": "https://mangazure.net/manga/astarte/",
+        "url": "astarte",
         "title": "Astarte",
         "cover": "astarte.jpg",
         "type": "romantik",
         "desc": "Kehanetlerin gölgesinde bir prenses."
     },
     {
-        "url": "https://mangazure.net/manga/mercenary-enrollment/",
+        "url": "the-lady-and-the-beast",
+        "title": "The Lady and the Beast",
+        "cover": "The-Lady-and-the-beast.jpg",
+        "type": "romantik",
+        "desc": "Lanetli bir dük ve güçlü bir kadın."
+    },
+    {
+        "url": "mercenary-enrollment",
         "title": "Mercenary Enrollment",
         "cover": "Mercenary-Enrollment.jpg",
         "type": "aksiyon",
         "desc": "Eski bir paralı askerin okul hayatı."
     },
     {
-        "url": "https://mangazure.net/manga/how-to-fight/",
+        "url": "how-to-fight",
         "title": "How to Fight",
         "cover": "How-To-Fight.jpg",
         "type": "aksiyon",
         "desc": "Dövüş videolarıyla yükseliş."
     },
     {
-        "url": "https://mangazure.net/manga/nano-machine/",
+        "url": "nano-machine",
         "title": "Nano Machine",
         "cover": "nano-machine.jpg",
         "type": "sistem",
         "desc": "Gelecek teknolojisi ile Murim."
     },
     {
-        "url": "https://mangazure.net/manga/the-greatest-estate-developer/",
+        "url": "leveling-up-by-only-eating",
+        "title": "Leveling Up By Only Eating",
+        "cover": "leveling-up-by-only-eating.png",
+        "type": "sistem",
+        "desc": "Yemek yiyerek güçlenen oyuncu."
+    },
+    {
+        "url": "long-live-the-king",
+        "title": "Long Live The King",
+        "cover": "long-live-the-king.png",
+        "type": "fantazi",
+        "desc": "Zayıf bir kralın oyun yetenekleriyle güçlenmesi."
+    },
+    {
+        "url": "master-of-legendary-realms",
+        "title": "Master of Legendary Realms",
+        "cover": "master-of-legendary-realms.jpg",
+        "type": "fantazi",
+        "desc": "Efsanevi diyarların efendisi."
+    },
+    {
+        "url": "rise-of-the-demon-king",
+        "title": "Rise of the Demon King",
+        "cover": "rise-of-the-demon-king.jpg",
+        "type": "aksiyon",
+        "desc": "İblis kralın yeniden yükselişi."
+    },
+    {
+        "url": "sss-class-suicide-hunter",
+        "title": "SSS-Class Suicide Hunter",
+        "cover": "sss-class-suicide-hunter.jpg",
+        "type": "sistem",
+        "desc": "Ölerek yetenek kopyalayan avcı."
+    },
+    {
+        "url": "the-greatest-estate-developer",
         "title": "The Greatest Estate Developer",
         "cover": "the-greatest-estate-developer.jpg",
         "type": "komedi",
         "desc": "Mühendislik zekasıyla fantezi dünyası."
+    },
+    {
+        "url": "bug-player",
+        "title": "Bug Player",
+        "cover": "Bug-Player.jpg",
+        "type": "sistem",
+        "desc": "Oyun açıklarını kullanan oyuncu."
+    },
+    {
+        "url": "dungeons-artifacts",
+        "title": "Dungeons & Artifacts",
+        "cover": "Dungeons-&-Artifacts.jpg",
+        "type": "fantazi",
+        "desc": "Zindanlar ve güçlü artefaktlar."
+    },
+    {
+        "url": "fff-class-trashero",
+        "title": "FFF-Class Trashero",
+        "cover": "FFF-Class-Trashero.jpg",
+        "type": "komedi",
+        "desc": "Sıradışı bir kahraman hikayesi."
+    },
+    {
+        "url": "memorize",
+        "title": "Memorize",
+        "cover": "Memorize.jpg",
+        "type": "aksiyon",
+        "desc": "Zamanda geri dönen oyuncu."
+    },
+    {
+        "url": "solo-spell-caster",
+        "title": "Solo Spell Caster",
+        "cover": "Solo-Spell-Caster.jpg",
+        "type": "sistem",
+        "desc": "Tek başına büyüleri yöneten oyuncu."
+    },
+    {
+        "url": "reborn-80000-years",
+        "title": "Reborn 80.000 Years",
+        "cover": "reborn-80000-years.jpg",
+        "type": "fantazi",
+        "desc": "80 bin yıl sonra yeniden doğuş."
+    },
+    {
+        "url": "rules-for-peddling-in-another-world",
+        "title": "Rules for Peddling",
+        "cover": "Rules-for-Peddling-in-Another-World.jpg",
+        "type": "isekai",
+        "desc": "Başka dünyada ticaret."
+    },
+    {
+        "url": "the-live",
+        "title": "The Live",
+        "cover": "The-Live.jpg",
+        "type": "aksiyon",
+        "desc": "Kayıp ailesini arayan bir adam."
+    },
+    {
+        "url": "the-strongest-manager-in-history",
+        "title": "The Strongest Manager",
+        "cover": "The-Strongest-Manager-in-History.jpg",
+        "type": "komedi",
+        "desc": "Tarihin en güçlü menajeri."
     }
 ]
