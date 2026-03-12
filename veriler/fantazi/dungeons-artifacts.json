@@ -2,6 +2,22 @@
     "title": "Dungeons & Artifacts",
     "cover": "https://raw.githubusercontent.com/dogamanzara243-hue/Chromanga/main/kapaklar/Dungeons-&-Artifacts.jpg",
     "type": "fantazi",
-    "desc": "Zindanlar ve g\u00fc\u00e7l\u00fc artefaktlar.",
-    "chapters": []
+    "desc": "Zindanlar ve güçlü artefaktlar.",
+    "chapters": [
+        {
+            "id": "1",
+            "name": "Bölüm 1: Yeni Bir Başlangıç",
+            "date": "2024-05-20"
+        },
+        {
+            "id": "2",
+            "name": "Bölüm 2: Gizemli Güç",
+            "date": "2024-05-21"
+        },
+        {
+            "id": "3",
+            "name": "Bölüm 3: Büyük Karşılaşma",
+            "date": "2024-05-22"
+        }
+    ]
 }
