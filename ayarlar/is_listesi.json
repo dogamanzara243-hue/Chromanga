@@ -1,1 +1,37 @@
-[]
+[
+    {
+        "url": "https://mangazure.net/manga/astarte/",
+        "title": "Astarte",
+        "cover": "astarte.jpg",
+        "type": "romantik",
+        "desc": "Kehanetlerin gölgesinde bir prenses."
+    },
+    {
+        "url": "https://mangazure.net/manga/mercenary-enrollment/",
+        "title": "Mercenary Enrollment",
+        "cover": "Mercenary-Enrollment.jpg",
+        "type": "aksiyon",
+        "desc": "Eski bir paralı askerin okul hayatı."
+    },
+    {
+        "url": "https://mangazure.net/manga/how-to-fight/",
+        "title": "How to Fight",
+        "cover": "How-To-Fight.jpg",
+        "type": "aksiyon",
+        "desc": "Dövüş videolarıyla yükseliş."
+    },
+    {
+        "url": "https://mangazure.net/manga/nano-machine/",
+        "title": "Nano Machine",
+        "cover": "nano-machine.jpg",
+        "type": "sistem",
+        "desc": "Gelecek teknolojisi ile Murim."
+    },
+    {
+        "url": "https://mangazure.net/manga/the-greatest-estate-developer/",
+        "title": "The Greatest Estate Developer",
+        "cover": "the-greatest-estate-developer.jpg",
+        "type": "komedi",
+        "desc": "Mühendislik zekasıyla fantezi dünyası."
+    }
+]
