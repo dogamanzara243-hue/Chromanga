@@ -2,6 +2,22 @@
     "title": "Rise of the Demon King",
     "cover": "https://raw.githubusercontent.com/dogamanzara243-hue/Chromanga/main/kapaklar/rise-of-the-demon-king.jpg",
     "type": "aksiyon",
-    "desc": "\u0130blis kral\u0131n yeniden y\u00fckseli\u015fi.",
-    "chapters": []
+    "desc": "İblis kralın yeniden yükselişi.",
+    "chapters": [
+        {
+            "id": "1",
+            "name": "Bölüm 1: Yeni Bir Başlangıç",
+            "date": "2024-05-20"
+        },
+        {
+            "id": "2",
+            "name": "Bölüm 2: Gizemli Güç",
+            "date": "2024-05-21"
+        },
+        {
+            "id": "3",
+            "name": "Bölüm 3: Büyük Karşılaşma",
+            "date": "2024-05-22"
+        }
+    ]
 }
