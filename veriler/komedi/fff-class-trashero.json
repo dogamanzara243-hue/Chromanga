@@ -2,6 +2,22 @@
     "title": "FFF-Class Trashero",
     "cover": "https://raw.githubusercontent.com/dogamanzara243-hue/Chromanga/main/kapaklar/FFF-Class-Trashero.jpg",
     "type": "komedi",
-    "desc": "S\u0131rad\u0131\u015f\u0131 bir kahraman hikayesi.",
-    "chapters": []
+    "desc": "Sıradışı bir kahraman hikayesi.",
+    "chapters": [
+        {
+            "id": "1",
+            "name": "Bölüm 1: Yeni Bir Başlangıç",
+            "date": "2024-05-20"
+        },
+        {
+            "id": "2",
+            "name": "Bölüm 2: Gizemli Güç",
+            "date": "2024-05-21"
+        },
+        {
+            "id": "3",
+            "name": "Bölüm 3: Büyük Karşılaşma",
+            "date": "2024-05-22"
+        }
+    ]
 }
