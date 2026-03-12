@@ -1,8 +1,7 @@
 {
     "title": "Bug Player",
-    "url": "bug-player",
     "cover": "https://raw.githubusercontent.com/dogamanzara243-hue/Chromanga/main/kapaklar/Bug-Player.jpg",
     "type": "sistem",
-    "description": "Oyun açıklarını kullanan oyuncu.",
+    "desc": "Oyun a\u00e7\u0131klar\u0131n\u0131 kullanan oyuncu.",
     "chapters": []
 }
