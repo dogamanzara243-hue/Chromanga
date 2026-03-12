@@ -28,39 +28,53 @@
         </div>
 
     <script>
-        // Ana Listeyi Çek ve Kategorilere Ayır
-        fetch('ayarlar/is_listesi.json')
-            .then(res => res.json())
-            .then(data => {
-                const gruplar = {};
-                data.forEach(manga => {
-                    if(!gruplar[manga.type]) gruplar[manga.type] = [];
-                    gruplar[manga.type].append(manga);
+    // Ana Listeyi Çek ve Kategorilere Ayır
+    fetch('ayarlar/is_listesi.json')
+        .then(res => {
+            if (!res.ok) throw new Error('Liste yüklenemedi!');
+            return res.json();
+        })
+        .then(data => {
+            const gruplar = {};
+            data.forEach(manga => {
+                // Kategori yoksa oluştur, varsa içine ekle
+                if(!gruplar[manga.type]) {
+                    gruplar[manga.type] = [];
+                }
+                gruplar[manga.type].push(manga);
+            });
+
+            const container = document.getElementById('ana-icerik');
+            container.innerHTML = ''; // İçini temizle
+
+            for(let tur in gruplar) {
+                // Kategori Başlığı
+                const baslik = document.createElement('h2');
+                baslik.className = 'kategori-baslik';
+                baslik.innerText = tur.charAt(0).toUpperCase() + tur.slice(1); // İlk harfi büyüt
+                
+                // Manga Listesi Kabı
+                const liste = document.createElement('div');
+                liste.className = 'manga-listesi';
+
+                gruplar[tur].forEach(manga => {
+                    liste.innerHTML += `
+                        <a href="manga/${manga.url}.html" class="manga-kart">
+                            <img src="kapaklar/${manga.cover}" alt="${manga.title}" onerror="this.src='https://via.placeholder.com/150x220?text=Resim+Yok'">
+                            <h3>${manga.title}</h3>
+                        </a>
+                    `;
                 });
 
-                const container = document.getElementById('ana-icerik');
-                for(let tur in gruplar) {
-                    const baslik = document.createElement('h2');
-                    baslik.className = 'kategori-baslik';
-                    baslik.innerText = tur.toUpperCase();
-                    
-                    const liste = document.createElement('div');
-                    liste.className = 'manga-listesi';
-
-                    gruplar[tur].forEach(manga => {
-                        liste.innerHTML += `
-                            <a href="manga/${manga.url}.html" class="manga-kart">
-                                <img src="kapaklar/${manga.cover}" alt="${manga.title}">
-                                <h3>${manga.title}</h3>
-                            </a>
-                        `;
-                    });
-
-                    container.appendChild(baslik);
-                    container.appendChild(liste);
-                }
-            });
-    </script>
+                container.appendChild(baslik);
+                container.appendChild(liste);
+            }
+        })
+        .catch(err => {
+            console.error(err);
+            document.getElementById('ana-icerik').innerHTML = '<p style="color:red; text-align:center;">Mangalar yüklenirken bir hata oluştu! Lütfen ayarlar/is_listesi.json dosyasını kontrol edin.</p>';
+        });
+            </script>
 
 </body>
 </html>
