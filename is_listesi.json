@@ -1,47 +1,86 @@
 [
   {
-    "url": "https://mangazure.net/manga/rules-for-peddling-in-another-world/",
-    "title": "Rules for Peddling in Another World",
-    "cover": "rules-for-peddling-in-another-world.jpg",
-    "desc": "Başka bir dünyada ticaret yapmanın kurallarını yeniden yazan bir girişimcinin hikayesi."
+    "url": "https://mangazure.net/manga/astarte/",
+    "title": "Astarte",
+    "cover": "astarte.jpg",
+    "type": "romantik",
+    "desc": "Kehanetlerin gölgesinde bir prensesin hikayesi."
   },
   {
-    "url": "https://mangazure.net/manga/how-to-fight/",
-    "title": "How to Fight",
-    "cover": "How-To-Fight.jpg",
-    "desc": "Zayıf bir gencin, gizemli bir kanal sayesinde dövüşmeyi öğrenip fenomen olma macerası."
+    "url": "https://mangazure.net/manga/the-lady-and-the-beast/",
+    "title": "The Lady and the Beast",
+    "cover": "The-Lady-and-the-beast.jpg",
+    "type": "romantik",
+    "desc": "Lanetli bir dük ve güçlü bir imparatoriçenin reenkarnasyonu."
   },
   {
     "url": "https://mangazure.net/manga/mercenary-enrollment/",
     "title": "Mercenary Enrollment",
     "cover": "Mercenary-Enrollment.jpg",
-    "desc": "Yıllarca paralı askerlik yapan bir gencin lise hayatına uyum sağlama çabası."
-  },
-  
-  {
-    "url": "https://mangazure.net/manga/the-lady-and-the-beast/",
-    "title": "The Lady and the Beast",
-    "cover": "The-Lady-and-the-Beast.jpg",
-    "desc": "Eski bir imparatoriçenin, lanetli bir dükle olan ilginç evlilik hikayesi."
+    "type": "aksiyon",
+    "desc": "Eski bir paralı askerin okul hayatı."
   },
   {
-    "url": "https://mangazure.net/manga/astarte/",
-    "title": "Astarte",
-    "cover": "astarte.jpg",
-    "desc": "Sevilmeyen bir prensesin, kaderini ve imparatorluğun geleceğini değiştirme çabası."
+    "url": "https://mangazure.net/manga/how-to-fight/",
+    "title": "How to Fight",
+    "cover": "How-To-Fight.jpg",
+    "type": "aksiyon",
+    "desc": "Zayıf bir gencin dövüş sanatları videosuyla yükselişi."
   },
-  
-  
   {
     "url": "https://mangazure.net/manga/nano-machine/",
     "title": "Nano Machine",
     "cover": "nano-machine.jpg",
-    "desc": "Gelecekten gelen makinelerle antik dövüş sanatlarının birleşimi."
+    "type": "sistem",
+    "desc": "Gelecek teknolojisi ile Murim dünyasında zirveye yolculuk."
   },
   {
-    "url": "https://mangazure.net/manga/the-book-eating-magician/",
-    "title": "The Book-Eating Magician",
-    "cover": "the-book-eating-magician.jpg",
-    "desc": "Kitapları yiyerek büyü öğrenen bir gencin hikayesi."
+    "url": "https://mangazure.net/manga/leveling-up-by-only-eating/",
+    "title": "Leveling Up By Only Eating",
+    "cover": "leveling-up-by-only-eating.png",
+    "type": "sistem",
+    "desc": "Sadece yemek yiyerek güçlenen bir oyuncunun hikayesi."
+  },
+  {
+    "url": "https://mangazure.net/manga/bug-player/",
+    "title": "Bug Player",
+    "cover": "Bug-Player.jpg",
+    "type": "sistem",
+    "desc": "Oyunun açıklarını kullanarak güçlenen oyuncu."
+  },
+  {
+    "url": "https://mangazure.net/manga/long-live-the-king/",
+    "title": "Long Live The King",
+    "cover": "long-live-the-king.png",
+    "type": "fantazi",
+    "desc": "Zayıf bir kralın oyun yetenekleriyle güçlenmesi."
+  },
+  {
+    "url": "https://mangazure.net/manga/dungeons-artifacts/",
+    "title": "Dungeons & Artifacts",
+    "cover": "Dungeons-&-Artifacts.jpg",
+    "type": "fantazi",
+    "desc": "Zindanlar ve güçlü artefaktlar."
+  },
+  {
+    "url": "https://mangazure.net/manga/fff-class-trashero/",
+    "title": "FFF-Class Trashero",
+    "cover": "FFF-Class-Trashero.jpg",
+    "type": "komedi",
+    "desc": "Geleneksel kahramanlardan nefret eden bir 'kahraman'."
+  },
+  {
+    "url": "https://mangazure.net/manga/sss-class-suicide-hunter/",
+    "title": "SSS-Class Suicide Hunter",
+    "cover": "sss-class-suicide-hunter.jpg",
+    "type": "sistem",
+    "desc": "Ölerek yetenek kopyalayan avcının kulesi."
+  },
+  {
+    "url": "https://mangazure.net/manga/the-greatest-estate-developer/",
+    "title": "The Greatest Estate Developer",
+    "cover": "the-greatest-estate-developer.jpg",
+    "type": "komedi",
+    "desc": "Mühendislik zekasıyla fantezi dünyasını inşa eden adam."
   }
 ]
