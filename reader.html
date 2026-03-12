@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okuyucu - Chromanga</title>
+    <style>
+        body { background: #0b0b0b; color: white; font-family: sans-serif; margin: 0; padding: 0; }
+        .nav { background: #1a1a1a; padding: 15px; position: sticky; top: 0; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.5); z-index: 1000; }
+        .btn { background: #ff4500; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none; font-weight: bold; }
+        .content { max-width: 100%; text-align: center; padding-top: 10px; }
+        .content img { width: 100%; max-width: 800px; display: block; margin: 0 auto; }
+        h2 { font-size: 16px; margin: 0; color: #ff4500; }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="javascript:history.back()" class="btn">← Geri</a>
+        <h2 id="manga-title">Yükleniyor...</h2>
+        <div style="width: 40px;"></div>
+    </div>
+    <div class="content" id="image-list">
+        </div>
+
+    <script>
+        async function sayfalariYukle() {
+            const p = new URLSearchParams(window.location.search);
+            const slug = p.get('manga');
+            const chId = p.get('ch');
+            
+            // Tüm kategorileri deniyoruz (Aksiyon, Romantik vb.)
+            const kategoriler = ['aksiyon', 'romantik', 'sistem', 'fantazi', 'dram'];
+            let data = null;
+
+            for(let kat of kategoriler) {
+                try {
+                    const r = await fetch(`https://raw.githubusercontent.com/dogamanzara243-hue/Chromanga/main/veriler/${kat}/${slug}.json`);
+                    if(r.ok) {
+                        data = await r.json();
+                        break;
+                    }
+                } catch(e) {}
+            }
+
+            if(data) {
+                document.getElementById('manga-title').innerText = data.title + " - Bölüm " + chId;
+                const ch = data.chapters.find(c => c.id == chId);
+                const box = document.getElementById('image-list');
+                if(ch && ch.images) {
+                    box.innerHTML = ch.images.map(img => `<img src="${img}" alt="Manga Sayfası">`).join('');
+                } else {
+                    box.innerHTML = '<p>Bu bölümün resimleri henüz eklenmemiş.</p>';
+                }
+            } else {
+                document.getElementById('image-list').innerHTML = '<p>Manga verisi bulunamadı.</p>';
+            }
+        }
+        window.onload = sayfalariYukle;
+    </script>
+</body>
+</html>
