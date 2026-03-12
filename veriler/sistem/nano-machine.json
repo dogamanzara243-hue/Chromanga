@@ -1,23 +1,30 @@
 {
     "title": "Nano Machine",
+    "url": "https://mangazure.net/manga/nano-machine/",
     "cover": "https://raw.githubusercontent.com/dogamanzara243-hue/Chromanga/main/kapaklar/nano-machine.jpg",
     "type": "sistem",
     "desc": "Gelecek teknolojisi ile Murim.",
     "chapters": [
         {
             "id": "1",
-            "name": "Bölüm 1: Yeni Bir Başlangıç",
-            "date": "2024-05-20"
+            "name": "Bölüm 01: Başlangıç",
+            "images": [
+                "https://via.placeholder.com/800x1200?text=Sayfa+1"
+            ]
         },
         {
             "id": "2",
-            "name": "Bölüm 2: Gizemli Güç",
-            "date": "2024-05-21"
+            "name": "Bölüm 02: Gizemli Olay",
+            "images": [
+                "https://via.placeholder.com/800x1200?text=Sayfa+2"
+            ]
         },
         {
             "id": "3",
-            "name": "Bölüm 3: Büyük Karşılaşma",
-            "date": "2024-05-22"
+            "name": "Bölüm 03: İlk Karşılaşma",
+            "images": [
+                "https://via.placeholder.com/800x1200?text=Sayfa+3"
+            ]
         }
     ]
 }
