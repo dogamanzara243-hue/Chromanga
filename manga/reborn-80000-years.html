@@ -6,39 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reborn 80.000 Years - Chromanga</title>
     <style>
-        body { background: #121212; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; }
+        body { background: #121212; color: white; font-family: sans-serif; padding: 20px; }
         .container { max-width: 800px; margin: auto; }
-        .header { display: flex; gap: 20px; background: #1e1e1e; padding: 20px; border-radius: 12px; align-items: center; }
-        .header img { width: 150px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
-        .info h1 { margin: 0; color: #ff4500; }
-        .chapters { margin-top: 30px; }
-        .chapter-item { display: block; background: #2a2a2a; padding: 15px; margin-bottom: 8px; border-radius: 6px; text-decoration: none; color: #eee; transition: 0.2s; }
-        .chapter-item:hover { background: #ff4500; color: white; transform: translateX(5px); }
-        .btn-back { color: #aaa; text-decoration: none; display: inline-block; margin-bottom: 15px; }
+        .header { display: flex; gap: 20px; background: #1e1e1e; padding: 20px; border-radius: 12px; }
+        .header img { width: 140px; border-radius: 8px; }
+        .chapter-item { display: block; background: #2a2a2a; padding: 15px; margin: 10px 0; border-radius: 6px; text-decoration: none; color: white; border-left: 4px solid #ff4500; }
+        .btn-back { color: #ff4500; text-decoration: none; display: block; margin-bottom: 20px; }
     </style>
 </head>
 <body>
     <div class="container">
-        <a href="../index.html" class="btn-back">← Ana Sayfaya Dön</a>
+        <a href="../index.html" class="btn-back">← Geri Dön</a>
         <div class="header">
-            <img src="https://raw.githubusercontent.com/dogamanzara243-hue/Chromanga/main/kapaklar/reborn-80000-years.jpg" alt="Reborn 80.000 Years">
-            <div class="info">
+            <img src="../kapaklar/reborn-80000-years.jpg" alt="Reborn 80.000 Years">
+            <div>
                 <h1>Reborn 80.000 Years</h1>
                 <p>80 bin yıl sonra yeniden doğuş.</p>
             </div>
         </div>
-        <div class="chapters" id="chapter-list">
-            <h3>Bölümler Yükleniyor...</h3>
-        </div>
+        <div id="chapter-list"><h3>Bölümler Aranıyor...</h3></div>
     </div>
 
     <script>
-        async function bolumleriCek() {
-            // DOSYA YOLUNU ZORLA (RAW GITHUB ÜZERİNDEN)
-            const url = 'https://raw.githubusercontent.com/dogamanzara243-hue/Chromanga/main/veriler/fantazi/reborn-80000-years.json';
+        async function bolumleriYukle() {
+            // BU SEFER GÖRECELİ YOL KULLANIYORUZ (DAHA GÜVENLİ)
+            const jsonYolu = '../veriler/fantazi/reborn-80000-years.json';
+            
             try {
-                const r = await fetch(url);
+                const r = await fetch(jsonYolu);
+                if (!r.ok) throw new Error("Dosya yok");
                 const data = await r.json();
+                
                 const box = document.getElementById('chapter-list');
                 box.innerHTML = '<h3>Bölüm Listesi</h3>';
                 
@@ -47,13 +45,20 @@
                         box.innerHTML += `<a href="#" class="chapter-item">${ch.name}</a>`;
                     });
                 } else {
-                    box.innerHTML += '<p style="color:#666;">Henüz bölüm eklenmemiş.</p>';
+                    box.innerHTML = '<p>Henüz bölüm eklenmemiş.</p>';
                 }
             } catch(e) {
-                document.getElementById('chapter-list').innerHTML = '<h3>Hata: Bölümler yüklenemedi.</h3>';
+                // EĞER ÜSTTEKİ OLMAZSA BİR DE RAW'DAN DENE (YEDEK PLAN)
+                const yedekUrl = 'https://raw.githubusercontent.com/dogamanzara243-hue/Chromanga/main/veriler/fantazi/reborn-80000-years.json';
+                const r2 = await fetch(yedekUrl);
+                const data2 = await r2.json();
+                document.getElementById('chapter-list').innerHTML = '<h3>Bölüm Listesi (Yedek Sunucu)</h3>';
+                data2.chapters.forEach(ch => {
+                    document.getElementById('chapter-list').innerHTML += `<a href="#" class="chapter-item">${ch.name}</a>`;
+                });
             }
         }
-        bolumleriCek();
+        bolumleriYukle();
     </script>
 </body>
 </html>
