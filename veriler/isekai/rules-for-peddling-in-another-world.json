@@ -2,6 +2,22 @@
     "title": "Rules for Peddling",
     "cover": "https://raw.githubusercontent.com/dogamanzara243-hue/Chromanga/main/kapaklar/Rules-for-Peddling-in-Another-World.jpg",
     "type": "isekai",
-    "desc": "Ba\u015fka d\u00fcnyada ticaret.",
-    "chapters": []
+    "desc": "Başka dünyada ticaret.",
+    "chapters": [
+        {
+            "id": "1",
+            "name": "Bölüm 1: Yeni Bir Başlangıç",
+            "date": "2024-05-20"
+        },
+        {
+            "id": "2",
+            "name": "Bölüm 2: Gizemli Güç",
+            "date": "2024-05-21"
+        },
+        {
+            "id": "3",
+            "name": "Bölüm 3: Büyük Karşılaşma",
+            "date": "2024-05-22"
+        }
+    ]
 }
