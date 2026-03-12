@@ -1,8 +1,8 @@
 {
     "title": "Nano Machine",
-    "url": "https://mangazure.net/manga/nano-machine/",
+    "url": "nano-machine",
     "cover": "https://raw.githubusercontent.com/dogamanzara243-hue/Chromanga/main/kapaklar/nano-machine.jpg",
     "type": "sistem",
-    "desc": "Gelecek teknolojisi ile Murim.",
+    "description": "Gelecek teknolojisi ile Murim.",
     "chapters": []
 }
