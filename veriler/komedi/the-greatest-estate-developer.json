@@ -2,6 +2,22 @@
     "title": "The Greatest Estate Developer",
     "cover": "https://raw.githubusercontent.com/dogamanzara243-hue/Chromanga/main/kapaklar/the-greatest-estate-developer.jpg",
     "type": "komedi",
-    "desc": "M\u00fchendislik zekas\u0131yla fantezi d\u00fcnyas\u0131.",
-    "chapters": []
+    "desc": "Mühendislik zekasıyla fantezi dünyası.",
+    "chapters": [
+        {
+            "id": "1",
+            "name": "Bölüm 1: Yeni Bir Başlangıç",
+            "date": "2024-05-20"
+        },
+        {
+            "id": "2",
+            "name": "Bölüm 2: Gizemli Güç",
+            "date": "2024-05-21"
+        },
+        {
+            "id": "3",
+            "name": "Bölüm 3: Büyük Karşılaşma",
+            "date": "2024-05-22"
+        }
+    ]
 }
