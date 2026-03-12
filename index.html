@@ -28,54 +28,55 @@
         </div>
 
 <script>
-    async function mangalariGetir() {
-        // GitHub kullanıcı adın ve depo adın
-        const repoOwner = "dogamanzara243-hue";
-        const repoName = "Chromanga";
-        
-        // Klasör yollarını ve dosya adını GitHub API üzerinden değil, direkt URL'den zorluyoruz
-        const url = `https://raw.githubusercontent.com/${repoOwner}/${repoName}/main/ayarlar/is_listesi.json`;
+    async function mangalariYukle() {
+        const container = document.getElementById('ana-icerik');
+        // Senin GitHub kullanıcı adın ve depona göre ayarlandı
+        const url = 'https://raw.githubusercontent.com/dogamanzara243-hue/Chromanga/main/ayarlar/is_listesi.json';
 
         try {
             const response = await fetch(url);
-            if (!response.ok) throw new Error("Dosya çekilemedi!");
+            if (!response.ok) throw new Error("Liste dosyası çekilemedi!");
             const data = await response.json();
             
-            const container = document.getElementById('ana-icerik');
-            container.innerHTML = '';
+            container.innerHTML = ''; // Yükleniyor yazısını temizle
 
+            // Kategorileri Grupla
             const gruplar = {};
             data.forEach(manga => {
-                if(!gruplar[manga.type]) gruplar[manga.type] = [];
-                gruplar[manga.type].push(manga);
+                if (!gruplar[manga.type]) {
+                    gruplar[manga.type] = [];
+                }
+                gruplar[manga.type].push(manga); // 'append' değil 'push' olmalı
             });
 
-            for(let tur in gruplar) {
-                const baslik = document.createElement('h2');
-                baslik.className = 'kategori-baslik';
-                baslik.innerText = tur.toUpperCase();
-                container.appendChild(baslik);
-
+            // Ekrana Yazdır
+            for (let tur in gruplar) {
+                const section = document.createElement('div');
+                section.innerHTML = `<h2 class="kategori-baslik">${tur.toUpperCase()}</h2>`;
+                
                 const liste = document.createElement('div');
                 liste.className = 'manga-listesi';
 
                 gruplar[tur].forEach(manga => {
                     liste.innerHTML += `
                         <a href="manga/${manga.url}.html" class="manga-kart">
-                            <img src="kapaklar/${manga.cover}" alt="${manga.title}" onerror="this.src='https://via.placeholder.com/150x220?text=Resim+Bulunamadi'">
+                            <img src="kapaklar/${manga.cover}" alt="${manga.title}" onerror="this.src='https://via.placeholder.com/150x220?text=Resim+Yok'">
                             <h3>${manga.title}</h3>
                         </a>
                     `;
                 });
-                container.appendChild(liste);
+
+                section.appendChild(liste);
+                container.appendChild(section);
             }
         } catch (error) {
             console.error("Hata:", error);
-            document.getElementById('ana-icerik').innerHTML = "<p style='text-align:center;'>Veriler yüklenirken bir sorun oluştu. Lütfen is_listesi.json dosyasını kontrol edin.</p>";
+            container.innerHTML = `<p style="text-align:center; padding:50px;">⚠️ Mangalar şu an yüklenemedi. <br><small>${error.message}</small></p>`;
         }
     }
 
-    mangalariGetir();
-                </script>
+    // Sayfa açıldığında çalıştır
+    window.onload = mangalariYukle;
+                                     </script>
 </body>
 </html>
