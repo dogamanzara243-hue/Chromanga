@@ -49,9 +49,13 @@
             "id": "3",
             "name": "B\u00f6l\u00fcm 03: \u0130lk Kar\u015f\u0131la\u015fma",
             "images": [
-                "https://picsum.photos/seed/page1/800/1200",
-                "https://picsum.photos/seed/page2/800/1200",
-                "https://picsum.photos/seed/page3/800/1200"
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773376953/manga_depo/solo-spell-caster/ch3/sayfa-1.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773376955/manga_depo/solo-spell-caster/ch3/sayfa-2.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773376957/manga_depo/solo-spell-caster/ch3/sayfa-3.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773376959/manga_depo/solo-spell-caster/ch3/sayfa-4.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773376961/manga_depo/solo-spell-caster/ch3/sayfa-5.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773376963/manga_depo/solo-spell-caster/ch3/sayfa-6.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773376964/manga_depo/solo-spell-caster/ch3/sayfa-7.jpg"
             ]
         },
         {
