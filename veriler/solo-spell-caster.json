@@ -27,6 +27,19 @@
                 "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773381663/manga/solo-spell-caster/ch1/ahedla4moojchv93h0mi.jpg",
                 "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773381664/manga/solo-spell-caster/ch1/izbb8fc6qezrreu2ngdr.jpg"
             ]
+        },
+        {
+            "id": "2",
+            "name": "B\u00f6l\u00fcm 2",
+            "images": [
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773381668/manga/solo-spell-caster/ch2/i0ejkb3e4ksnafohevwa.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773381670/manga/solo-spell-caster/ch2/ft3dsumkzj5f0xarlap5.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773381671/manga/solo-spell-caster/ch2/iirecduigkrmldrj3exd.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773381672/manga/solo-spell-caster/ch2/dr6voeuxiodkzq9uc7vv.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773381673/manga/solo-spell-caster/ch2/bl9temtubaikcwu2w7qy.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773381673/manga/solo-spell-caster/ch2/art1dujcgrso6e4vvckw.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773381674/manga/solo-spell-caster/ch2/mojduxhvgjmfmhuhpdpk.jpg"
+            ]
         }
     ]
 }
