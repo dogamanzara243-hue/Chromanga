@@ -7,16 +7,37 @@
     "chapters": [
         {
             "id": "1",
-            "name": "Bölüm 01: Başlangıç",
+            "name": "B\u00f6l\u00fcm 01: Ba\u015flang\u0131\u00e7",
             "images": [
-                "https://picsum.photos/seed/page1/800/1200",
-                "https://picsum.photos/seed/page2/800/1200",
-                "https://picsum.photos/seed/page3/800/1200"
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377003/manga_depo/nano-machine/ch1/sayfa-1.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377005/manga_depo/nano-machine/ch1/sayfa-2.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377007/manga_depo/nano-machine/ch1/sayfa-3.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377008/manga_depo/nano-machine/ch1/sayfa-4.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377010/manga_depo/nano-machine/ch1/sayfa-5.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377011/manga_depo/nano-machine/ch1/sayfa-6.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377013/manga_depo/nano-machine/ch1/sayfa-7.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377014/manga_depo/nano-machine/ch1/sayfa-8.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377016/manga_depo/nano-machine/ch1/sayfa-9.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377017/manga_depo/nano-machine/ch1/sayfa-10.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377019/manga_depo/nano-machine/ch1/sayfa-11.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377021/manga_depo/nano-machine/ch1/sayfa-12.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377022/manga_depo/nano-machine/ch1/sayfa-13.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377023/manga_depo/nano-machine/ch1/sayfa-14.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377025/manga_depo/nano-machine/ch1/sayfa-15.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377026/manga_depo/nano-machine/ch1/sayfa-16.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377028/manga_depo/nano-machine/ch1/sayfa-17.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377030/manga_depo/nano-machine/ch1/sayfa-18.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377031/manga_depo/nano-machine/ch1/sayfa-19.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377032/manga_depo/nano-machine/ch1/sayfa-20.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377034/manga_depo/nano-machine/ch1/sayfa-21.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377035/manga_depo/nano-machine/ch1/sayfa-22.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377037/manga_depo/nano-machine/ch1/sayfa-23.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377039/manga_depo/nano-machine/ch1/sayfa-24.jpg"
             ]
         },
         {
             "id": "2",
-            "name": "Bölüm 02: Gizemli Olay",
+            "name": "B\u00f6l\u00fcm 02: Gizemli Olay",
             "images": [
                 "https://picsum.photos/seed/page1/800/1200",
                 "https://picsum.photos/seed/page2/800/1200",
@@ -25,7 +46,7 @@
         },
         {
             "id": "3",
-            "name": "Bölüm 03: İlk Karşılaşma",
+            "name": "B\u00f6l\u00fcm 03: \u0130lk Kar\u015f\u0131la\u015fma",
             "images": [
                 "https://picsum.photos/seed/page1/800/1200",
                 "https://picsum.photos/seed/page2/800/1200",
