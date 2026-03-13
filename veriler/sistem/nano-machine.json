@@ -54,9 +54,24 @@
             "id": "3",
             "name": "B\u00f6l\u00fcm 03: \u0130lk Kar\u015f\u0131la\u015fma",
             "images": [
-                "https://picsum.photos/seed/page1/800/1200",
-                "https://picsum.photos/seed/page2/800/1200",
-                "https://picsum.photos/seed/page3/800/1200"
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377063/manga_depo/nano-machine/ch3/sayfa-1.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377065/manga_depo/nano-machine/ch3/sayfa-2.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377066/manga_depo/nano-machine/ch3/sayfa-3.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377068/manga_depo/nano-machine/ch3/sayfa-4.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377070/manga_depo/nano-machine/ch3/sayfa-5.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377072/manga_depo/nano-machine/ch3/sayfa-6.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377074/manga_depo/nano-machine/ch3/sayfa-7.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377075/manga_depo/nano-machine/ch3/sayfa-8.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377077/manga_depo/nano-machine/ch3/sayfa-9.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377079/manga_depo/nano-machine/ch3/sayfa-10.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377080/manga_depo/nano-machine/ch3/sayfa-11.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377082/manga_depo/nano-machine/ch3/sayfa-12.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377083/manga_depo/nano-machine/ch3/sayfa-13.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377085/manga_depo/nano-machine/ch3/sayfa-14.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377086/manga_depo/nano-machine/ch3/sayfa-15.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377088/manga_depo/nano-machine/ch3/sayfa-16.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377089/manga_depo/nano-machine/ch3/sayfa-17.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377091/manga_depo/nano-machine/ch3/sayfa-18.jpg"
             ]
         }
     ]
