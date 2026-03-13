@@ -56,6 +56,22 @@
                 "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377250/manga_depo/sss-class-suicide-hunter/ch3/sayfa-10.jpg",
                 "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377251/manga_depo/sss-class-suicide-hunter/ch3/sayfa-11.jpg"
             ]
+        },
+        {
+            "id": "4",
+            "name": "B\u00f6l\u00fcm 4",
+            "images": [
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377257/manga_depo/sss-class-suicide-hunter/ch4/sayfa-1.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377259/manga_depo/sss-class-suicide-hunter/ch4/sayfa-2.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377261/manga_depo/sss-class-suicide-hunter/ch4/sayfa-3.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377262/manga_depo/sss-class-suicide-hunter/ch4/sayfa-4.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377264/manga_depo/sss-class-suicide-hunter/ch4/sayfa-5.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377266/manga_depo/sss-class-suicide-hunter/ch4/sayfa-6.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377268/manga_depo/sss-class-suicide-hunter/ch4/sayfa-7.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377269/manga_depo/sss-class-suicide-hunter/ch4/sayfa-8.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377271/manga_depo/sss-class-suicide-hunter/ch4/sayfa-9.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377273/manga_depo/sss-class-suicide-hunter/ch4/sayfa-10.jpg"
+            ]
         }
     ]
 }
