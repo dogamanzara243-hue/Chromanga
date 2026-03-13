@@ -9,9 +9,27 @@
             "id": "1",
             "name": "B\u00f6l\u00fcm 01: Ba\u015flang\u0131\u00e7",
             "images": [
-                "https://picsum.photos/seed/page1/800/1200",
-                "https://picsum.photos/seed/page2/800/1200",
-                "https://picsum.photos/seed/page3/800/1200"
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773376898/manga_depo/solo-spell-caster/ch1/sayfa-1.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773376899/manga_depo/solo-spell-caster/ch1/sayfa-2.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773376901/manga_depo/solo-spell-caster/ch1/sayfa-3.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773376903/manga_depo/solo-spell-caster/ch1/sayfa-4.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773376905/manga_depo/solo-spell-caster/ch1/sayfa-5.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773376906/manga_depo/solo-spell-caster/ch1/sayfa-6.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773376908/manga_depo/solo-spell-caster/ch1/sayfa-7.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773376910/manga_depo/solo-spell-caster/ch1/sayfa-8.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773376911/manga_depo/solo-spell-caster/ch1/sayfa-9.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773376913/manga_depo/solo-spell-caster/ch1/sayfa-10.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773376915/manga_depo/solo-spell-caster/ch1/sayfa-11.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773376916/manga_depo/solo-spell-caster/ch1/sayfa-12.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773376918/manga_depo/solo-spell-caster/ch1/sayfa-13.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773376919/manga_depo/solo-spell-caster/ch1/sayfa-14.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773376921/manga_depo/solo-spell-caster/ch1/sayfa-15.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773376923/manga_depo/solo-spell-caster/ch1/sayfa-16.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773376924/manga_depo/solo-spell-caster/ch1/sayfa-17.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773376926/manga_depo/solo-spell-caster/ch1/sayfa-18.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773376927/manga_depo/solo-spell-caster/ch1/sayfa-19.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773376929/manga_depo/solo-spell-caster/ch1/sayfa-20.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773376931/manga_depo/solo-spell-caster/ch1/sayfa-21.jpg"
             ]
         },
         {
