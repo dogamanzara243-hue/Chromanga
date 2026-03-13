@@ -40,48 +40,59 @@ kook<!DOCTYPE html>
     </div>
 
     <script>
-    async function bolumYukle(mangaSlug, bolumNo) {
-        // 1. Dosya yolunu yeni düzene (veriler/) göre ayarlıyoruz
+    // 1. URL'den Parametreleri Al (Örn: ?manga=solo-spell-caster&bolum=1)
+    const urlParams = new URLSearchParams(window.location.search);
+    const mangaSlug = urlParams.get('manga');
+    const bolumNo = urlParams.get('bolum');
+
+    async function bolumYukle() {
+        if (!mangaSlug || !bolumNo) {
+            alert("Manga veya bölüm bilgisi URL'de bulunamadı!");
+            return;
+        }
+
+        // GitHub JSON Linki (Senin verdiğin formatta)
         const jsonUrl = `https://raw.githubusercontent.com/dogamanzara243-hue/Chromanga/main/veriler/${mangaSlug}.json`;
         
+        console.log("Aranan Dosya:", jsonUrl); // F12 konsolunda neyi aradığını görelim
+
         try {
             const response = await fetch(jsonUrl);
-            if (!response.ok) throw new Error("Dosya bulunamadı!");
+            
+            if (!response.ok) {
+                throw new Error(`Dosya bulunamadı! Lütfen GitHub'da 'veriler/${mangaSlug}.json' olduğundan emin ol.`);
+            }
             
             const data = await response.json();
             
-            // 2. Bölümü bul
-            const bolum = data.chapters.find(ch => ch.id == bolumNo);
+            // Bölümü id'ye göre bul
+            const bolum = data.chapters.find(ch => String(ch.id) === String(bolumNo));
             
+            const resimAlani = document.getElementById('manga-resim-alani');
+            resimAlani.innerHTML = ''; // Sayfayı temizle
+
             if (bolum && bolum.images) {
-                const resimAlani = document.getElementById('manga-resim-alani');
-                resimAlani.innerHTML = ''; // Eski resimleri temizle
-                
-                // 3. Cloudinary linklerini ekrana bas
                 bolum.images.forEach(imgUrl => {
                     const img = document.createElement('img');
                     img.src = imgUrl;
-                    img.style.width = '100%'; // Tam genişlik
-                    img.loading = 'lazy'; // Performans için
+                    img.style.width = '100%';
+                    img.style.display = 'block';
+                    img.loading = 'lazy'; 
                     resimAlani.appendChild(img);
                 });
+                console.log(`Bölüm ${bolumNo} başarıyla yüklendi.`);
             } else {
-                alert("Bu bölüm henüz yüklenmemiş kardo!");
+                resimAlani.innerHTML = `<p style="color:white; text-align:center;">Bölüm ${bolumNo} henüz sisteme eklenmemiş kardo!</p>`;
             }
+
         } catch (error) {
-            console.error("Hata:", error);
-            alert("Veriler çekilirken bir sorun oluştu.");
+            console.error("Hata Detayı:", error);
+            alert("Hata: " + error.message);
         }
     }
 
-    // Sayfa açıldığında URL'den manga ve bölümü al (Örn: reader.html?manga=solo-spell-caster&bolum=87)
-    const urlParams = new URLSearchParams(window.location.search);
-    const manga = urlParams.get('manga');
-    const bolum = urlParams.get('bolum');
-
-    if (manga && bolum) {
-        bolumYukle(manga, bolum);
-    }
+    // Fonksiyonu Çalıştır
+    bolumYukle();
     </script>
 </body>
 </html>
