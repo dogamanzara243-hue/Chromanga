@@ -3,11 +3,11 @@
     "url": "https://mangazure.net/manga/solo-spell-caster/",
     "cover": "https://raw.githubusercontent.com/dogamanzara243-hue/Chromanga/main/kapaklar/Solo-Spell-Caster.jpg",
     "type": "sistem",
-    "desc": "Tek başına büyüleri yöneten oyuncu.",
+    "desc": "Tek ba\u015f\u0131na b\u00fcy\u00fcleri y\u00f6neten oyuncu.",
     "chapters": [
         {
             "id": "1",
-            "name": "Bölüm 01: Başlangıç",
+            "name": "B\u00f6l\u00fcm 01: Ba\u015flang\u0131\u00e7",
             "images": [
                 "https://picsum.photos/seed/page1/800/1200",
                 "https://picsum.photos/seed/page2/800/1200",
@@ -16,7 +16,7 @@
         },
         {
             "id": "2",
-            "name": "Bölüm 02: Gizemli Olay",
+            "name": "B\u00f6l\u00fcm 02: Gizemli Olay",
             "images": [
                 "https://picsum.photos/seed/page1/800/1200",
                 "https://picsum.photos/seed/page2/800/1200",
@@ -25,11 +25,29 @@
         },
         {
             "id": "3",
-            "name": "Bölüm 03: İlk Karşılaşma",
+            "name": "B\u00f6l\u00fcm 03: \u0130lk Kar\u015f\u0131la\u015fma",
             "images": [
                 "https://picsum.photos/seed/page1/800/1200",
                 "https://picsum.photos/seed/page2/800/1200",
                 "https://picsum.photos/seed/page3/800/1200"
+            ]
+        },
+        {
+            "id": "87",
+            "name": "B\u00f6l\u00fcm 87",
+            "images": [
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773353518/manga_depo/solo-spell-caster/bolum-87/sayfa-1.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773353520/manga_depo/solo-spell-caster/bolum-87/sayfa-2.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773353521/manga_depo/solo-spell-caster/bolum-87/sayfa-3.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773353523/manga_depo/solo-spell-caster/bolum-87/sayfa-4.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773353525/manga_depo/solo-spell-caster/bolum-87/sayfa-5.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773353527/manga_depo/solo-spell-caster/bolum-87/sayfa-6.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773353529/manga_depo/solo-spell-caster/bolum-87/sayfa-7.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773353530/manga_depo/solo-spell-caster/bolum-87/sayfa-8.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773353533/manga_depo/solo-spell-caster/bolum-87/sayfa-9.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773353535/manga_depo/solo-spell-caster/bolum-87/sayfa-10.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773353537/manga_depo/solo-spell-caster/bolum-87/sayfa-11.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773353538/manga_depo/solo-spell-caster/bolum-87/sayfa-12.jpg"
             ]
         }
     ]
