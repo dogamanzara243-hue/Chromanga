@@ -30,6 +30,21 @@
                 "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773381727/manga/nano-machine/ch1/povfxx1fclh9nuaubaq7.jpg",
                 "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773381727/manga/nano-machine/ch1/he1wg5ctwmgwz58tyiup.jpg"
             ]
+        },
+        {
+            "id": "2",
+            "name": "B\u00f6l\u00fcm 2",
+            "images": [
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773381731/manga/nano-machine/ch2/hjdsrl8ytq8q0tg2ttoz.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773381732/manga/nano-machine/ch2/v7pdc1l63yspgcjczjl9.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773381733/manga/nano-machine/ch2/xyhzewqlf0eefggmfror.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773381734/manga/nano-machine/ch2/xzci85ponoj5gwk4ofkk.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773381734/manga/nano-machine/ch2/xvopukmbwe3zxbf4ek5w.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773381736/manga/nano-machine/ch2/gyscxi3fwpki04fcnka3.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773381738/manga/nano-machine/ch2/p74rr1hglx6zsvi4qwpw.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773381738/manga/nano-machine/ch2/tm4ubbueyypikzav6fg5.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773381739/manga/nano-machine/ch2/czmuomcpn4hvpfdnnl1x.jpg"
+            ]
         }
     ]
 }
