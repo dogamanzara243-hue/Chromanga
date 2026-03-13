@@ -40,21 +40,48 @@ kook<!DOCTYPE html>
     </div>
 
     <script>
-        async function loadChapter() {
-    // ... manga ve ch parametrelerini al ...
-    const res = await fetch(`../veriler/romantik/${manga}.json`);
-    const data = await res.json();
-    const chapter = data.chapters.find(c => c.id == ch);
-
-    if (chapter && chapter.images.length > 0) {
-        viewer.innerHTML = '';
-        chapter.images.forEach(imgUrl => {
-            const img = document.createElement('img');
-            img.src = imgUrl; // Artık bu link Cloudinary linki olacak
-            viewer.appendChild(img);
-        });
+    async function bolumYukle(mangaSlug, bolumNo) {
+        // 1. Dosya yolunu yeni düzene (veriler/) göre ayarlıyoruz
+        const jsonUrl = `https://raw.githubusercontent.com/dogamanzara243-hue/Chromanga/main/veriler/${mangaSlug}.json`;
+        
+        try {
+            const response = await fetch(jsonUrl);
+            if (!response.ok) throw new Error("Dosya bulunamadı!");
+            
+            const data = await response.json();
+            
+            // 2. Bölümü bul
+            const bolum = data.chapters.find(ch => ch.id == bolumNo);
+            
+            if (bolum && bolum.images) {
+                const resimAlani = document.getElementById('manga-resim-alani');
+                resimAlani.innerHTML = ''; // Eski resimleri temizle
+                
+                // 3. Cloudinary linklerini ekrana bas
+                bolum.images.forEach(imgUrl => {
+                    const img = document.createElement('img');
+                    img.src = imgUrl;
+                    img.style.width = '100%'; // Tam genişlik
+                    img.loading = 'lazy'; // Performans için
+                    resimAlani.appendChild(img);
+                });
+            } else {
+                alert("Bu bölüm henüz yüklenmemiş kardo!");
+            }
+        } catch (error) {
+            console.error("Hata:", error);
+            alert("Veriler çekilirken bir sorun oluştu.");
+        }
     }
-}
+
+    // Sayfa açıldığında URL'den manga ve bölümü al (Örn: reader.html?manga=solo-spell-caster&bolum=87)
+    const urlParams = new URLSearchParams(window.location.search);
+    const manga = urlParams.get('manga');
+    const bolum = urlParams.get('bolum');
+
+    if (manga && bolum) {
+        bolumYukle(manga, bolum);
+    }
     </script>
 </body>
 </html>
