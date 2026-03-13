@@ -3,20 +3,27 @@
     "url": "https://mangazure.net/manga/sss-class-suicide-hunter/",
     "cover": "https://raw.githubusercontent.com/dogamanzara243-hue/Chromanga/main/kapaklar/sss-class-suicide-hunter.jpg",
     "type": "sistem",
-    "desc": "Ölerek yetenek kopyalayan avcı.",
+    "desc": "\u00d6lerek yetenek kopyalayan avc\u0131.",
     "chapters": [
         {
             "id": "1",
-            "name": "Bölüm 01: Başlangıç",
+            "name": "B\u00f6l\u00fcm 01: Ba\u015flang\u0131\u00e7",
             "images": [
-                "https://picsum.photos/seed/page1/800/1200",
-                "https://picsum.photos/seed/page2/800/1200",
-                "https://picsum.photos/seed/page3/800/1200"
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377185/manga_depo/sss-class-suicide-hunter/ch1/sayfa-1.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377187/manga_depo/sss-class-suicide-hunter/ch1/sayfa-2.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377189/manga_depo/sss-class-suicide-hunter/ch1/sayfa-3.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377191/manga_depo/sss-class-suicide-hunter/ch1/sayfa-4.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377193/manga_depo/sss-class-suicide-hunter/ch1/sayfa-5.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377194/manga_depo/sss-class-suicide-hunter/ch1/sayfa-6.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377196/manga_depo/sss-class-suicide-hunter/ch1/sayfa-7.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377198/manga_depo/sss-class-suicide-hunter/ch1/sayfa-8.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377200/manga_depo/sss-class-suicide-hunter/ch1/sayfa-9.jpg",
+                "https://res.cloudinary.com/dbjvzp6xf/image/upload/v1773377201/manga_depo/sss-class-suicide-hunter/ch1/sayfa-10.jpg"
             ]
         },
         {
             "id": "2",
-            "name": "Bölüm 02: Gizemli Olay",
+            "name": "B\u00f6l\u00fcm 02: Gizemli Olay",
             "images": [
                 "https://picsum.photos/seed/page1/800/1200",
                 "https://picsum.photos/seed/page2/800/1200",
@@ -25,7 +32,7 @@
         },
         {
             "id": "3",
-            "name": "Bölüm 03: İlk Karşılaşma",
+            "name": "B\u00f6l\u00fcm 03: \u0130lk Kar\u015f\u0131la\u015fma",
             "images": [
                 "https://picsum.photos/seed/page1/800/1200",
                 "https://picsum.photos/seed/page2/800/1200",
